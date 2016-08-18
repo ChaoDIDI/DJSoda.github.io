@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="程龙杰">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--以上代码告诉IE浏览器 IE8/9几以后的版本都会以最高版本IE来渲染-->
+    <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1, user-scalable=no" ">
+    <title>宝钢</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css ">
+    <style>
+       body{
+          background-color: #eee;
+          padding: 50px 0 35px 0;  
+        }
+      .navbar{
+          background-image: url(image/nav-bg.png);
+          background-repeat: repeat-x;
+          margin-bottom: 0;
+      }
+      .navbar-nav{
+         margin-left: 50px;
+      }
+      .navbar-default .navbar-nav > li > a{
+          padding: 15px 10px 8px 10px;
+          margin:  0 5px;
+      }
+      .navbar-default .navbar-nav > .active > a,
+      .navbar-default .navbar-nav > .active > a:focus,
+       .navbar-default .navbar-nav > .active > a:hover,
+       .navbar-default .navbar-nav > li > a:hover{
+           background:none;
+           border-bottom: 3px solid #35f;
+            padding: 15px 10px 8px 10px;
+       }
+       .form-control{
+          border-radius: 20px;
+          height: 28px;
+          margin-top: 3px;
+           
+       }
+       .form-group{
+           position: relative;
+       }
+       .form-group>span{
+           position: absolute;
+           right: 2px;
+           top: 5px;
+           background-color: #35f;
+           color: white;
+           border-radius: 50%;
+           padding: 5px;   
+       }
+       .banner{
+           height: 500px;
+           background-image: url(image/banner.png);
+         background-position: 50% 50%;
+           
+       }
+       #section>div>h2{
+           font-size: 1.3rem;
+           font-weight: normal;
+           color: white;
+           background-image: url(image/blue-bg.png);
+           padding: 6px;
+           border-top-left-radius: 5px;
+           border-top-right-radius: 5px;
+           margin: -26px 0 0 0;
+           
+       }
+        #section>div:nth-child(2)>h2
+        {
+            background-image: url(image/black-bg.png);
+        }
+        #section>div>div{
+            height: 220px;
+            border: 1px solid lightgray;
+            border-top: none;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+       
+       footer{
+           height: 35px;
+           position: fixed;
+           bottom: 0;
+           width: 100%;
+           background-image: url(image/footer-bg.png);
+           font-size: 1.2rem;
+           color: #888;
+       }
+       footer nav a{
+           font-size: 1.2rem;
+           color: #888;
+       }
+       footer .container{
+           display: flex;
+           justify-content: space-between;
+           padding: 10px 10px 0 10px;
+       }
+       footer>.contianer:before,footer>.contianer:after{
+           content: none;
+       }
+       @media (max-width:1500px)
+       {
+           .banner{
+           height: 400px;
+           background-size: auto 110%;
+       }
+       }
+       @media (max-width:1200px)
+       {
+           .banner{
+           height: 320px; 
+       }
+      
+       }
+       @media (max-width:992px)
+       {
+           .banner{ 
+               height:260px;
+                } 
+           #section>div>h2{ 
+               margin-top: 10px; 
+               }
+            .navbar-nav{
+                 margin-left: 0;
+                  }
+            .navbar-default .navbar-nav > li > a{
+         
+                 margin-left: 0;
+                 }
+                 
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > li > a:hover{
+           border: none;
+           background-color: #eee;
+          
+              
+              }
+              .navbar-form{
+                  border-bottom: none;
+              }
+              .form-group{
+                  padding: 0.2px;
+              }
+       }
+      
+       @media (max-width:768px)
+       {
+           .banner{
+           height: 200px;
+             }
+             footer{
+                 position: static;
+                 background:none;
+                 height: auto;
+                 text-align: center;
+             }
+             footer>.container{
+                 display: block;
+             }
+             footer nav>a:first-child{
+                 margin-left: 0;
+             }
+             
+             footer nav{
+                 line-height: 3em;
+                 margin-top: 1em;
+             }
+             body{
+                 padding-bottom: 1em;
+             }
+       }
+       @media (max-width:640px)
+       {
+           .banner{
+           height: 170px;
+       }
+       }
+       @media (max-width:480px)
+       {
+           .banner{
+           height: 125px;
+       }
+       
+       footer span{
+           display: block;
+       }
+       }
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#">
+                        <img src="image/logo.png" alt="宝钢">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">首页</a></li>
+                        <li><a href="#">媒体中心</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">业务模块</a></li>
+                        <li><a href="#">产品服务</a></li>
+                    </ul>
+                    <form class="navbar-form  navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <header class="banner"></header>
+        <div class="container" id="section">
+            <div class="col-md-4">
+                <h2>公司动态</h2>
+                <div></div>
+            </div>
+             <div class="col-md-4">
+                <h2>研究与观点</h2>
+                <div></div>
+            </div>
+             <div class="col-md-4">
+                <h2>产品与服务</h2>
+                <div></div>
+            </div>
+        </div>
+        
+        
+        <footer>
+            <div class="container">
+                <div>
+                <span>@Copyright@2006-2016,</span>
+                <span>MyEnglish co,ltd. ALL right reserverd</span>
+                </div>
+           
+                <nav>
+                <span>
+                    <a href="#">网站地图</a>
+                    <a href="#">关于创建</a>
+                </span>
+                <span>
+                    <a href="#">工作机会</a>
+                    <a href="#">法律声明</a>
+                    <a href="#">友情链接</a>
+                </span>
+                </nav>
+            </div>
+        </footer>
+        
+        
+     
+       
+        <script src="js/jquery.min.js "></script>
+        <script src="js/bootstrap.min.js "></script>
+    </body>
+</html>
