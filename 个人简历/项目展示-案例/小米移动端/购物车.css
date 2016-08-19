@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #efefef;
+}
+/*搜索导航*/
+header{
+    width: 100%;
+    height: 8rem;
+    border-bottom: 1px solid #dfdfdf;  
+}
+header>a:nth-of-type(1){
+    width: 33.3333333%;
+    float: left;
+    font-size: 3rem;
+    text-align: left;
+    padding: 1.5rem 0 0 2rem;
+}
+header>a:nth-of-type(2){
+    width: 33.3333333%;
+    float: left;
+    font-size: 3rem;
+    text-align: right;
+    padding: 1.5rem 2rem 0 0;
+}
+header>h1{
+    width: 33.3333333%;
+    float: left;
+    text-align: center;
+    font-size: 3rem;
+    color: #666666;
+    padding-top: 0.5rem;
+}
+
+section{
+    background-color: white;
+    width: 100%;
+    height: 90rem;
+}
+/*商品按钮*/
+.sp{
+    text-align: center;
+    padding: 10rem 0 5rem 0;
+}
+section a:nth-child(1){
+    display: inline-block;
+    width: 35%;
+    font-size: 3rem;
+    padding: 2rem 8rem;
+    color: #333;
+    background-color: #F4F4F4;
+    margin: 0;
+}
+section a:nth-child(2){
+    display: inline-block;
+    width: 35%;
+    font-size: 3rem;
+    color: white;
+    padding: 2rem 8rem;
+    background-color: #FF5722;
+}
+section a:hover{
+    box-shadow: inset 2px 2px 8px #999; 
+}
+/*导航栏*/
+footer{
+    background-color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 8rem;
+    box-shadow: 0px 0px 2px #333;
+}
+footer>a{
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 3rem;
+    box-sizing: border-box;
+}
+footer>a>img{
+    padding: 0.3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #F56C08;
+    border-radius: 2px;
+}
+footer>a>p{
+    font-size: 2rem;
+    color: #999999;
+}
+ @media (max-width:800px){
+       header{
+    height: 7rem;
+}
+header>a:nth-of-type(1){
+    font-size: 2.5rem;
+    padding: 1rem 0 0 2rem;
+}
+header>a>img{
+    width: 3rem;
+    height: 3rem;
+}
+header>a:nth-of-type(2){
+    font-size: 2.5rem;
+    padding: 1rem 2rem 0 0;
+}
+header>h1{
+    font-size: 2.7rem;
+    padding-top: 0.3rem;
+}
+section{
+    height: 90rem;
+}
+.sp{
+    padding: 10rem 0 3rem 0;
+}
+.sp img{
+    width: 18rem;
+    height: 18rem;
+}
+section a:nth-child(1){
+    font-size: 2rem;
+    padding: 1.5rem 7rem;
+}
+section a:nth-child(2){
+    font-size: 2rem;
+    padding: 1.5rem 7rem;
+}
+footer{
+    height: 7.5rem;
+}
+footer>a{
+    font-size: 2.8rem;
+}
+footer>a>img{
+    padding: 0.3rem;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+footer>a>p{
+    font-size: 1.9rem;
+}
+ }
+  @media (max-width:640px){
+    header{
+    height: 6rem;
+}
+header>a:nth-of-type(1){
+    font-size: 2.2rem;
+    padding: 1rem 0 0 2rem;
+}
+header>a>img{
+    width: 3rem;
+    height: 3rem;
+}
+header>a:nth-of-type(2){
+    font-size: 2.2rem;
+    padding: 1rem 2rem 0 0;
+}
+header>h1{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+section{
+    height: 100rem;
+}
+.sp{
+    padding: 10rem 0 2rem 0;
+}
+.sp img{
+    width: 16rem;
+    height: 16rem;
+}
+section a:nth-child(1){
+    font-size: 1.5rem;
+    padding: 1rem 5.32rem;
+}
+section a:nth-child(2){
+    font-size: 1.5rem;
+    padding: 1rem 5.32rem;
+}
+
+footer{
+    height: 7rem;
+}
+footer>a{
+    font-size: 2.5rem;
+}
+footer>a>img{
+    padding: 0.3rem;
+    width: 3rem;
+    height: 3rem;
+}
+footer>a>p{
+    font-size: 1.7rem;
+} 
+}
+  @media (max-width:480px){
+    header{
+    height: 5rem;
+}
+header>a:nth-of-type(1){
+    font-size: 2rem;
+    padding: 1rem 0 0 2rem;
+}
+header>a>img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+header>a:nth-of-type(2){
+    font-size: 2rem;
+    padding: 1rem 2rem 0 0;
+}
+header>h1{
+    font-size: 2.1rem;
+    margin: 1.2rem 0;
+}
+section{
+    height: 100rem;
+}
+.sp{
+    padding: 10rem 0 1rem 0;
+}
+.sp img{
+    width: 14rem;
+    height: 14rem;
+}
+section a:nth-child(1){
+    font-size: 1.5rem;
+    padding: 1rem 2.55rem;
+}
+section a:nth-child(2){
+    font-size: 1.5rem;
+    padding: 1rem 2.55rem;
+}
+footer{
+    height: 6rem;
+}
+footer>a{
+    font-size: 2rem;
+}
+footer>a>img{
+    padding: 0.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+footer>a>p{
+    font-size: 1.5rem;
+} 
+}
+  @media (max-width:320px){
+    header{
+    height: 4rem;
+}
+header>a:nth-of-type(1){
+    font-size: 1.5rem;
+    padding: 1rem 0 0 2rem;
+}
+header>a>img{
+    width: 2rem;
+    height: 2rem;
+}
+header>a:nth-of-type(2){
+    font-size: 1.5rem;
+    padding: 1rem 2rem 0 0;
+}
+header>h1{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+section{
+    height: 100rem;
+}
+.sp{
+    padding: 9rem 0 0 0;
+}
+.sp img{
+    width: 11rem;
+    height: 11rem;
+}
+section a:nth-child(1){
+    font-size: 1.5rem;
+    padding: 1rem 1.8rem;
+}
+section a:nth-child(2){
+    font-size: 1.5rem;
+    padding: 1rem 1.8rem;
+}
+footer{
+    height: 5rem;
+}
+footer>a{
+    font-size: 1.5rem;
+}
+footer>a>img{  
+    padding: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+}
+footer>a>p{
+    font-size: 1.2rem;
+}
+}

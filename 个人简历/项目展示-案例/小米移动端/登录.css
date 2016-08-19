@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #efefef;
+}
+section{
+    width: 85rem;
+    height: 65rem;
+    background-color: white;
+    margin: 10rem auto;
+}
+section>img{
+    display: block;
+    background-color:#EF5B00;
+    margin: 0 auto;
+    position: relative;
+    top: 5rem;
+}
+section h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    top: 7rem;
+}
+/*账号密码*/
+form{
+    text-align: center;
+    position: relative;
+    top: 10rem;
+}
+form input{
+    width: 35rem;
+    height: 5rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+/*立即登录*/
+#ljdl{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 13rem;
+    font-size: 1.6rem;
+    color: white;
+    width: 35rem;
+    height: 5rem;
+    background-color: #EF5B00;
+    padding: 1rem 0;
+}
+/*其他登录*/
+.s4{          
+    text-align: center;
+    position: relative;
+    top: 15rem;
+    color: #8a8a8a;
+    font-size: 1.4rem;
+}
+.qt{
+    display: inline-block;
+    width: 12rem;
+    position: relative;
+    top: -0.5rem;
+    border: 1px solid #ededed;
+}
+.tb{
+    text-align: center;
+    position: relative;
+    top: 16rem;
+}
+.tb a{
+    margin: 0 1.5rem;
+}
+.register{
+    text-align: center;
+    position: relative;
+    top: 20rem;
+}
+.register a{
+    color: #757575;
+}
+.register a:nth-child(1) span{
+    border-right: 1px solid #cccccc;
+}
+@media (max-width:992px){
+section{
+    width: 40rem;
+    height: 50rem;
+    margin: 20rem auto;
+}
+section>img{
+    position: relative;
+    top: 3rem;
+}
+section h1{
+    font-size: 2rem;
+    position: relative;
+    top: 5rem;
+}
+/*账号密码*/
+form{
+    position: relative;
+    top: 6rem;
+}
+form input{
+    margin-top: 1.5rem;
+}
+/*立即登录*/
+#ljdl{
+    position: relative;
+    top: 8rem;
+}
+/*其他登录*/
+.s4{          
+    position: relative;
+    top: 10rem;
+}
+.tb{
+    position: relative;
+    top: 11rem;
+}
+.register{
+    position: relative;
+    top: 15rem;
+}
+}

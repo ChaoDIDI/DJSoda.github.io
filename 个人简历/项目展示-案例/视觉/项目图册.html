@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta charset="utf-8">
+        <meta name="author" content="李潇峰">
+        <title>项目图册</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                
+            }
+            html{
+                height: 100%;
+            }
+            body{
+                margin: 0;
+                height: 100%;
+                background-color: #f6f6f6;
+            }
+            header{
+                color: #33CC66;
+                text-align: center;
+                border-bottom:1px solid #33CC66;
+                line-height: 240%; 
+                background-color: white;
+                font-size: 15px;
+            }
+            body>img{
+                width: 100%;
+                display: block;
+            }
+            main{
+                background-image: url(image/line.png);
+                background-repeat: repeat-y;
+                background-position: center;
+                font-size: 6px;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                width: 50%;
+                list-style: none;
+                float: left;
+            }
+            li{
+                margin: 0;
+                padding: 12px;
+            }
+            li a{
+                border: 1px solid #dfdfdf;
+                background-color: white;
+                padding: 5px;
+                line-height: 0;
+                display: inline-block;
+                position: relative;
+            }
+            li a img{
+                width: 100%;
+            }
+            li a i{
+                display: block;
+                width: 6px;
+                height: 11px;
+                background-image: url(image/right_bg.png);
+                position: absolute;
+                top: 10px;
+                right: -5px;
+                background-size: 100%;
+            }
+            li a span{
+                display: block;
+                width: 14px;
+                height: 22px;
+                background-image: url(image/camera.png);
+                background-size: 100%;
+                position: absolute;
+                top: 4px;
+                right: -20px;
+            }
+            .cf{
+                clear: both;
+            }
+            ul:nth-child(2){
+                margin-top: 40px;
+            }
+            ul:nth-child(2) i{
+                left: -5px;
+                background-image:url(image/left_bg.png);
+            }
+            ul:nth-child(2) span{
+                left: -20px;
+            } 
+            footer{
+                text-align: center;
+                font-size: 12px;
+                color: #9c9c9c;
+                padding: 15px;
+            }     
+     </style>
+    </head>
+    <body>
+        <header>康桥林溪湾实景展示</header>
+        <img src="image/tc.jpg" alt="">
+        <main>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-1.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-2.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-3.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-4.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-5.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+             <ul>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-6.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-7.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-8.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-9.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/tc-10.jpg" alt="">
+                        <i></i>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="cf"></div>
+        </main>
+    <footer>
+            个人案例展示
+        </footer>
+    </body>
+</html>

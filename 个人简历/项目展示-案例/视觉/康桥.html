@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="李潇峰">
+        <title>康桥</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+                background-color: #ededed;
+            }
+            body>img{
+                width: 100%;
+            }
+            #toolbar{
+                margin: 12px 10px 0 10px;
+            }
+            #toolbar a{
+                border: 1px solid #33cc66;
+                display: inline-block;
+                width: 136px;
+                height: 40px;
+                border-radius: 5px;
+                text-decoration: none;
+                text-align: center;
+                color: #33cc66;
+                padding-top: 7px;
+                
+                
+            }
+            #toolbar a img{
+                width: 22px;
+                height: 22px;
+                vertical-align: middle;
+            }
+            #toolbar a:nth-child(2){
+                background-color: #33cc66;
+                color: white;
+                float: right;
+            }
+            .infos{
+               background-color: white;
+               margin: 15px 10px 0 10px;
+            }
+            .infos h2{
+                font-size: 16px;
+                font-weight: normal;
+                color: #333333;
+                margin: 0;
+                padding: 7px 12px 12px 12px;
+                border-bottom: 1px solid #ededed;
+            }
+            
+            .infos h2 img{
+                width: 25px;
+                height: 25px;
+                position: relative;
+                top: 5px;
+            }
+            .infos h2 span{
+                float: right;
+                position: relative;
+                top: 7px;
+                color: #33cc66;
+            }
+            .infos dl{
+                margin: 0;
+                padding: 14px;
+                font-size: 14px;
+                line-height: 160%;
+                color: #7D7DA5;
+            }
+            .infos dt{
+                float: left;
+            }
+            .infos dd{
+                float: left;
+                margin: 0 0 0 5px;
+            }
+            .clear{
+                clear: both;
+            }
+            
+            .infos dd:nth-of-type(3){
+                width: calc(100% - 85px);
+            }
+            #map{
+                width: 100%;
+                display: block;
+            }
+            .infos p{
+                margin: 0;
+                padding: 15px;
+                color: #6a6a6a;
+            }
+            #address{
+                color: #6a6a6a;
+                font-size: 14px;
+                text-decoration: none;
+                padding-top: 8px;
+                display: block;
+                
+            }
+            #address img{
+                width: 12px;
+                height: 16px;
+                vertical-align: middle;
+            }
+            
+            .infos footer{
+                border-top: 1px solid #ededed;
+                text-align: center;
+                padding: 8px;
+            }
+            .infos footer img{
+                width: 22px;
+            }
+            footer{
+                text-align: center;
+                color: #9a9a9a;
+                font-size: 10px;
+                padding: 15px;
+                
+            }
+            
+            
+        </style>
+        
+    </head>
+    <body>
+        <img src="image/xq-1.jpg" alt="">
+        <section  id="toolbar">
+            <a href="#"><img src="image/tel.png" alt="">   电话咨询</a>
+            <a href="#"> <img src="image/c12.png" alt="">预约看房</a>
+        </section>
+        <section  class="infos">
+            <h2>
+                <img src="image/icon06.png" alt="">
+                &nbsp;基本信息
+                <span>在售</span>
+            </h2>
+            <dl>
+                <dt>楼盘名称：</dt>
+                <dd>康桥林溪湾</dd>
+                <div class="clear"></div>
+                <dt>楼盘价格：</dt>
+                <dd>一房一价</dd>
+                <div class="clear"></div>
+                <dt>主推户型：</dt>
+                <dd>林溪湾：天阔联排、赤金双拼、新派联排、电梯叠墅；溪棠：三室两厅两卫、三室两厅一卫。</dd>
+                <div class="clear"></div>
+            </dl>
+        </section>
+        <section class="infos">
+            <h2>
+                <img src="image/icon01.png" alt="">
+                &nbsp;楼盘地址
+            </h2>
+            <p>
+                <img  id="map" src="image/map.png" alt="">
+                <a   id="address" href="#">
+                    <img src="image/icon_map.png" alt="">
+                    &nbsp;郑州·龙湖·湖滨路与翔安路交叉处
+                </a>
+            </p>
+        </section>
+        <section class="infos">
+            <h2>
+                <img src="image/icon04.png" alt="">
+                &nbsp;楼盘介绍
+            </h2>
+            <p>
+                林溪湾位于新郑市龙湖镇湖滨路与祥安路交汇处由康桥地产投资运营，郑州新兴置业有限公司开发建设，
+                项目总占地650亩，有类独、双拼、联排、叠墅等户型。林溪湾由郑州新兴置业力邀加拿大ADS建筑规划公司、
+                景观设计公司香港贝尔高林等业内著名单位，联合打造世界级低密豪宅的中原样板。林溪湾的物业服务由同
+                步国际的一级资质物业服务公司——太平世家提供，太平世家也是中原首个加盟“金钥匙”的物业公司。
+                
+            </p>
+            <footer>
+                <img src="image/up.png" alt="">
+            </footer>
+        </section>
+         <section class="infos">
+            <h2>
+                <img src="image/icon05.png" alt="">
+                &nbsp;区位交通
+            </h2>
+            <p>
+              BRT直达，地铁2号线途经项目门前，郑新快速通道已经开通，大学南路即将贯穿南北，京广快速路二期工程即将完工，紫荆山南路已经开工；项目距离港区交通便利，10分钟到达新郑国际机场。 
+                
+            </p>
+            <footer>
+                <img src="image/up.png" alt="">
+            </footer>
+        </section>
+         <section class="infos">
+            <h2>
+                <img src="image/icon02.png" alt="">
+                &nbsp;周边配套
+            </h2>
+            <p>
+                幼儿园:郑州实验幼儿园、教工幼儿园。<br><br>
+                
+                小学：伊河路小学、纬五路一小、新郑市实验小学。<br><br>
+                中学：郑州一中、郑州六中、河南省外国语中学、郑州四中、郑州十六中、郑大一附中、郑州十四中、郑州二十四中、郑州十二中、郑州三中、郑州八中、郑州五十七中。<br><br>
+                大学：中原工学院、升达大学、经济干部管理学院、职工医学院、河南省经贸学院、河南省纺织高等专科学校、河南省检查官学院、国家法官学院河南分院等。<br><br>
+                银行：中国农业银行、郑州市农村合作信用社、中国建设银行、兴业银行、中国工商银行、中国银行。<br><br>
+                医院：河南省第二人民医院、新郑市第三人民医院。<br><br>
+                其他：龙湖镇邮政所。<br><br>
+            </p>
+            <footer>
+                <img src="image/up.png" alt="">
+            </footer>
+        </section>
+        
+        <footer>
+            个人练习案例
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #efefef;
+}
+/*页头搜索*/
+header{
+    width: 100%;
+    height: 8rem;
+    border-bottom: 1px solid #9c9c9c;
+    background-color: white;
+}
+header a{
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #9c9c9c;
+    padding: 1rem 3rem;
+    width: 100%;
+}
+header a span:nth-child(1){
+    position: relative;
+    top: 0.5rem;
+}
+
+
+/*轮播图*/
+#carousel-example-generic{
+    widows: 100%;    
+}
+#carousel-example-generic img{  
+    width: 100%;
+    height: 35rem;
+}
+
+
+
+/*新品上市*/
+.NTS{
+    width: 76rem;
+    height: 32rem;
+    margin: 0 auto;
+}
+.NTS>img{
+    width: 25rem;
+    height: 31rem;
+    padding: 1rem 0.5rem 1rem 1rem;
+}
+
+
+
+
+/*商品*/
+.all{
+    width: 100%;
+    height: 100%;
+    background-color: white;  
+}
+.Product{
+    position: relative;
+    height: 20rem;
+    border-bottom: 1px solid #ededed;
+    padding-top: 2rem;
+}
+.Product img:nth-child(1){
+    width: 23rem;
+    position: absolute;
+    
+}
+.Product img:nth-child(2){
+    width: 12rem;
+    position: absolute;
+    left: 3rem;
+    top: 5.5rem;
+    opacity: 0.9;
+}
+.col_red{
+    position: absolute;
+    left: 25rem;   
+}
+.Product h2{
+    color: #000000;
+    font-size: 2.5rem;
+}
+.message{
+    color: #969696;
+    font-size: 1.8rem;
+}
+.cost{
+    color: #fe4900;
+    font-size: 2rem;
+}
+#rj{
+    margin-bottom: 5rem;
+}
+
+
+
+
+/*导航栏*/
+footer{
+    background-color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 8rem;
+    box-shadow: 0px 0px 2px #333;
+}
+footer>a{
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 3rem;
+    box-sizing: border-box;
+}
+footer>a>img{
+    padding: 0.3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #F56C08;
+    border-radius: 2px;
+}
+footer>a>p{
+    font-size: 2rem;
+    color: #999999;
+}
+
+ @media (max-width:768px){
+       header{
+    height: 7rem;
+}
+header>a{
+    font-size: 2.5rem;
+    padding: 1rem 0 0 2rem;
+}
+header>a>img{
+    width: 3rem;
+    height: 3rem;
+}
+header span{
+    font-size: 2.7rem;
+    padding-top: 0.3rem;
+}
+
+
+/*轮播图*/
+#carousel-example-generic img{  
+    height: 32rem;
+}
+/*新品上市*/
+.NTS{
+    width: 60rem;
+    height: 29rem;
+}
+.NTS>img{
+    width: 19rem;
+    height: 27rem;
+    padding: 0.9rem 0.5rem 0.9rem 0.9rem;
+}
+/*商品*/
+.Product{
+    height: 19rem;
+    padding-top: 2rem;
+}
+.Product img:nth-child(1){
+    width: 22rem;    
+}
+.Product img:nth-child(2){
+    width: 11rem;
+    left: 3rem;
+    top: 5.5rem;
+}
+.col_red{
+    left: 24rem;   
+}
+.Product h2{
+    font-size: 2.3rem;
+}
+.message{
+    font-size: 1.6rem;
+}
+.cost{
+    font-size: 1.8rem;
+}
+#rj{
+    margin-bottom: 4rem;
+}
+/*导航栏*/
+footer{
+    height: 7.5rem;
+}
+footer>a{
+    font-size: 2.8rem;
+}
+footer>a>img{
+    padding: 0.3rem;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+footer>a>p{
+    font-size: 1.9rem;
+}
+ }
+   @media (max-width:640px){
+    header{
+    height: 6rem;
+}
+header>a{
+    font-size: 2.2rem;
+    padding: 1rem 0 0 2rem;
+}
+header>a>img{
+    width: 3rem;
+    height: 3rem;
+}
+header span{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+/*轮播图*/
+#carousel-example-generic img{  
+    height: 25rem;
+}
+/*新品上市*/
+.NTS{
+    width: 50rem;
+    height: 25rem;
+}
+.NTS>img{
+    width: 16rem;
+    height: 23rem;
+    padding: 0.8rem 0.4rem 0.8rem 0.8rem;
+}
+/*商品*/
+.Product{
+    height: 17rem;
+    padding-top: 1.8rem;
+}
+.Product img:nth-child(1){
+    width: 20rem;    
+}
+.Product img:nth-child(2){
+    width: 10rem;
+    left: 3rem;
+    top: 5.5rem;
+}
+.col_red{
+    left: 22rem;   
+}
+.Product h2{
+    font-size: 2.1rem;
+}
+.message{
+    font-size: 1.4rem;
+}
+.cost{
+    font-size: 1.6rem;
+}
+#rj{
+    margin-bottom: 4rem;
+}
+/*导航栏*/
+footer{
+    height: 7rem;
+}
+footer>a{
+    font-size: 2.5rem;
+}
+footer>a>img{
+    padding: 0.3rem;
+    width: 3rem;
+    height: 3rem;
+}
+footer>a>p{
+    font-size: 1.7rem;
+} 
+}
+  @media (max-width:480px){
+    header{
+    height: 5rem;
+}
+header>a:nth-of-type(1){
+    font-size: 2rem;
+    padding: 1rem 0 0 2rem;
+}
+header>a>img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+header>a:nth-of-type(2){
+    font-size: 2rem;
+    padding: 1rem 2rem 0 0;
+}
+header>h1{
+    font-size: 2.1rem;
+    margin: 1.2rem 0;
+}
+/*轮播图*/
+#carousel-example-generic img{  
+    height: 20rem;
+}
+/*新品上市*/
+.NTS{
+    width: 35rem;
+    height: 17rem;
+}
+.NTS>img{
+    width: 10.5rem;
+    height: 16rem;
+    padding: 0.8rem 0.4rem 0.8rem 0.8rem;
+}
+/*商品*/
+.Product{
+    height: 15rem;
+    padding-top: 1.5rem;
+}
+.Product img:nth-child(1){
+    width: 18rem;    
+}
+.Product img:nth-child(2){
+    width: 8rem;
+    left: 3rem;
+    top: 5.5rem;
+}
+.col_red{
+    left: 20rem;   
+}
+.Product h2{
+    font-size: 1.7rem;
+}
+.message{
+    font-size: 1.1rem;
+}
+.cost{
+    font-size: 1.1rem;
+}
+#rj{
+    margin-bottom: 4rem;
+}
+
+/*导航栏*/
+footer{
+    height: 6rem;
+}
+footer>a{
+    font-size: 2rem;
+}
+footer>a>img{
+    padding: 0.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+footer>a>p{
+    font-size: 1.5rem;
+} 
+}
+@media (max-width:320px){
+    header{
+    height: 4rem;
+}
+header>a{
+    font-size: 1.5rem;
+    padding: 1rem 0 0 2rem;
+}
+header>a>img{
+    width: 2rem;
+    height: 2rem;
+}
+header span{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+/*轮播图*/
+#carousel-example-generic img{  
+    height: 15rem;
+}
+/*新品上市*/
+.NTS{
+    width: 25rem;
+    height: 13rem;
+}
+.NTS>img{
+    width: 8rem;
+    height: 12rem;
+    padding: 0;
+}
+/*商品*/
+.Product{
+    height: 12rem;
+    padding-top: 1rem;
+}
+.Product img:nth-child(1){
+    width: 15rem;    
+}
+.Product img:nth-child(2){
+    width: 6rem;
+    left: 3rem;
+    top: 5rem;
+}
+.col_red{
+    left: 16rem;   
+}
+.Product h2{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+}
+.message{
+    font-size: 1rem;
+}
+.cost{
+    font-size: 1rem;
+}
+#rj{
+    margin-bottom: 4rem;
+}
+/*导航栏*/
+footer{
+    height: 5rem;
+}
+footer>a{
+    font-size: 1.5rem;
+}
+footer>a>img{  
+    padding: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+}
+footer>a>p{
+    font-size: 1.2rem;
+}
+}

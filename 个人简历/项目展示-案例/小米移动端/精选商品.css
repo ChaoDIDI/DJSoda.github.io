@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #efefef;
+}
+.info{
+    width: 100%;
+    height: 18rem;
+    background-color: white;
+    margin: 0 0 3rem 0;
+}
+.info ul{
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;  
+}
+.info ul li{
+    float: left;
+    width: 50%;
+    padding: 4rem 0 2rem 3rem;
+}
+.info ul li:nth-child(2){
+    padding: 4rem 3rem 2rem 0;
+    text-align: right;
+    color: #FF5722
+}
+.info p{
+    font-size: 1.8rem;
+    padding: 0 3rem;
+}
+@media (max-width:768px){
+.info{
+    height: 16rem;
+    margin: 0 0 2rem 0;
+}
+.info ul{
+    font-size: 1.8rem;  
+}
+.info ul li{
+    width: 50%;
+    padding: 1rem 0 1.5rem 1rem;
+}
+.info ul li:nth-child(2){
+    padding: 1rem 1rem 1.5rem 0;
+}
+.info p{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+}
+@media (max-width:640px){
+.info{
+    height: 11rem;
+    margin: 0 0 1.5rem 0;
+}
+.info ul{
+    font-size: 2rem;  
+}
+.info ul li{
+    width: 50%;
+    padding: 0.8rem 0 1.2rem 0.8rem;
+}
+.info ul li:nth-child(2){
+    padding: 0.8rem 0.8rem 1.2rem 0;
+}
+.info p{
+    font-size: 1.5rem;
+    padding: 0 0.8rem;
+}
+}
+@media (max-width:480px){
+.info{
+    height: 9rem;
+    margin: 0 0 1.2rem 0;
+}
+.info ul{
+    font-size: 1.7rem;  
+}
+.info ul li{
+    width: 50%;
+    padding: 0.8rem 0 1.2rem 0.8rem;
+}
+.info ul li:nth-child(2){
+    padding: 0.8rem 0.8rem 1.2rem 0;
+}
+.info p{
+    font-size: 1.2rem;
+    padding: 0 0.8rem;
+}
+}
+@media (max-width:420px){
+.info{
+    height: 8.5rem;
+    margin: 0 0 1.1rem 0;
+}
+.info ul{
+    font-size: 1.6rem;  
+}
+.info ul li{
+    width: 50%;
+    padding: 0.7rem 0 1.1rem 0.7rem;
+}
+.info ul li:nth-child(2){
+    padding: 0.7rem 0.7rem 1.1rem 0;
+}
+.info p{
+    font-size: 1.1rem;
+    padding: 0 0.7rem;
+}
+}
+@media (max-width:380px){
+.info{
+    height: 8rem;
+    margin: 0 0 1rem 0;
+}
+.info ul{
+    font-size: 1.3rem;  
+}
+.info ul li{
+    width: 50%;
+    padding: 0.6rem 0 1rem 0.6rem;
+}
+.info ul li:nth-child(2){
+    padding: 0.6rem 0.6rem 1rem 0;
+}
+.info p{
+    font-size: 1rem;
+    padding: 0 0.6rem;
+}
+}
+@media (max-width:320px){
+.info{
+    height: 6rem;
+    margin: 0 0 1rem 0;
+}
+.info ul{
+    font-size: 1.25rem;  
+}
+.info ul li{
+    width: 50%;
+    padding: 0.5rem 0 0.9rem 0.5rem;
+}
+.info ul li:nth-child(2){
+    padding: 0.5rem 0.5rem 0.9rem 0;
+}
+.info p{
+    font-size: 0.7rem;
+    padding: 0 0.6rem;
+}
+}
