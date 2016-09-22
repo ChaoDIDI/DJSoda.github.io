@@ -1,0 +1,138 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    background-color: #F5F5F5;
+}
+a{color:#7A7A87; text-decoration:none;}
+.yyg-header-search{
+    margin: 0  auto;
+    padding: 0 ;
+    display:  flex;
+    width: 100%;
+    background-color: #F44336;
+    height: 60px;
+}
+.yyg-header-search img{
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+}
+.yyg-header-fonts span{
+    margin:  0 auto;
+    line-height: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+.nav-fication-3{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border-bottom: solid #ededed 2px;
+}
+.nav-fication-3  a img{
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+.nav-fication-3-1{
+    display: flex;
+    justify-content: space-around;
+    margin-top:2px ;
+}
+.yyg-content-option{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+}
+.col-nav-col{
+    width: 25%;
+    text-align: center;
+}
+.nav-item-Popularity a{
+    font-size: 15px;
+    color: #333;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    margin-bottom: -1px;
+    position: relative;
+}
+
+.nav-item-Popularity a:hover {
+    border-bottom: red 3px solid;
+    height: 50px;
+    width: 60px;
+    color: red;
+
+}
+.nav-item-dot a {
+    font-size: 15px;
+    color: #333;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    margin-bottom: -1px;
+    position: relative;
+}
+.nav-item-dot a:hover{
+    border-bottom: red 3px solid;
+    height: 50px;
+    width: 60px;
+}
+.nav-item a{
+    font-size: 15px;
+    color: #333;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    margin-bottom: -1px;
+    position: relative;
+}
+.nav-item a:hover{
+    border-bottom: red 3px solid;
+    height: 50px;
+    width: 60px;
+}
+.fl a{
+    font-size: 15px;
+    color: #333;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    margin-bottom: -1px;
+    position: relative;
+}
+.fl a:hover{
+    border-bottom: red 3px solid;
+    height: 50px;
+    width: 60px;
+}
+
+.yyg-footer-fixed{
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+.yyg-footer-img img{
+    width: 50px;
+    height: 50px;
+}
+.dp-broad__li{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.yyg-content-product{
+    display: flex;
+    flex-wrap: nowrap;
+}

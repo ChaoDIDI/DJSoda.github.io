@@ -1,0 +1,11 @@
+
+.list {
+    width: 100%;
+    height: 100px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    -moz-background-size:100% 100%;  /* 老版本的 Firefox */
+  }
+.inputcss-1{
+
+}
