@@ -1,0 +1,165 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+
+}
+body{
+    background-color: #DEDEDE;
+    font-size: 17px;
+}
+.winnings-header-img1 img{
+    height: 80px;
+}
+.list {
+    width: 100%;
+    height: 100px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    -moz-background-size:100% 100%;  /* 老版本的 Firefox */
+}
+.winning-header-img2{
+    background-color: #F10061;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -2px;
+    color: white;
+}
+.winning-header-img2 a{
+    float: left;
+}
+.winning-header-img2 a img{
+    height: 80px;
+    /*width: 100px;*/
+    margin-top:  2px;
+    margin-right: -10px;
+}
+
+.winning-header-img2 span{
+    line-height: 88px;
+}
+.winning-header-img3 img{
+    width: 100%;
+
+}
+.winning-content-words {
+    background-color: white;
+    margin: 0;
+    height: 330px;
+}
+.winning-content-words p{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.winning-content-words2{
+    margin: 15px;
+    border: solid 1px gray;
+    background-color: white;
+}
+.winning-content-words2 li{
+    list-style-type :none;
+}
+.winning-content-words3 img{
+    border-radius: 50px;
+    height: 70px;
+    display: inline-block;
+}
+
+.winning-content-words4{
+    background-color: #F10061;
+    height: 60px;
+    line-height: 60px;
+    margin: 15px;
+}
+.winning-content-words4 span:nth-child(1){
+    margin-left: 20px;
+
+}
+.winning-content-words4 span:nth-child(2){
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+
+}
+.winning-content-words5{
+    margin:15px;
+    background-color: #dedede;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+
+}
+.winning-content-words6{
+    padding-bottom: 10px;
+}
+.details-footer-record{
+    background-color: white;
+    border:1px solid black;
+    height: 100%;
+    margin-top:3px;
+    margin-bottom: 40px;
+
+}
+.details-footer-record li{
+    border-bottom: 1px solid gray;
+    line-height: 70px;
+    height: 70px;
+    list-style-type: none;
+}
+.details-footer-record li a{
+    height: 40px;
+    margin: 15px;
+    line-height:50px;
+    color: #696969;
+}
+.details-footer-record li img {
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.details-footer-fixed{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+}
+.details-footer-fixed1{
+    float:left ;
+    margin: 15px;
+    color: #A5A5A5
+}
+.details-footer-fixed2{
+    background-color: #F10061;
+    float: right;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+}

@@ -20,27 +20,29 @@
     <!-- 滚动图-->
     <div id="demo1" class="slideBox">
         <ul class="items">
-            <li><a title="电饭煲"><img src="image/1.jpg"></a></li>
-            <li><a title="电冰箱"><img src="image/2.jpg"></a></li>
-            <li><a title="洗衣机"><img src="image/3.jpg"></a></li>
-            <li><a title="空调电脑"><img src="image/4.jpg"></a></li>
-            <li><a title="摩托车"><img src="image/5.jpg"></a></li>
+            <li style="width: 100%"><a title="电饭煲"><img src="image/1.jpg"></a></li>
+            <li style="width: 100%"><a title="电冰箱"><img src="image/2.jpg"></a></li>
+            <li style="width: 100%"><a title="洗衣机"><img src="image/3.jpg"></a></li>
+            <li style="width: 100%"><a title="空调电脑"><img src="image/4.jpg"></a></li>
+            <li style="width: 100%"><a title="摩托车"><img src="image/5.jpg"></a></li>
         </ul>
     </div>
     <!--分类管理-->
     <div class="nav-fication-3">
-        <a href=""><img src="image/lcon1.jpg" alt=""><p class="nav-fication-3-1">分类</p></a>
-        <a href=""><img src="image/Icon2.jpg" alt=""><p class="nav-fication-3-1">常见问题</p></a>
-        <a href=""><img src="image/lcon3.jpg" alt=""><p class="nav-fication-3-1">晒单</p></a>
+        <a href="#"><img src="image/lcon1.jpg" alt=""><p class="nav-fication-3-1">分类</p></a>
+        <a href="answer.html"><img src="image/Icon2.jpg" alt=""><p class="nav-fication-3-1">问题</p></a>
+        <a href="#"><img src="image/lcon3.jpg" alt=""><p class="nav-fication-3-1">晒单</p></a>
+        <a href="#"><img src="image/lcon3.jpg" alt=""><p class="nav-fication-3-1">经验</p></a>
+
     </div>
 
 
     <div class="yyg-content-option" style="border-bottom: 1px solid #ededed;">
         <div class="col-nav-col">
-            <span class="nav-item-Popularity"> <a href="">人气</a></span>
+            <span class="nav-item-Popularity"> <a href="商品页.html">人气</a></span>
         </div>
         <div class="col-nav-col">
-            <span class="nav-item-dot"> <a href="">最新</a></span>
+            <span class="nav-item-dot"> <a href="最新揭晓.html">最新</a></span>
         </div>
         <div class="col-nav-col" >
             <span class="nav-item"> <a href="">即将揭晓</a></span>
@@ -49,189 +51,103 @@
             <span class="fl"><a href="">总需人数</a></span>
         </div>
     </div>
-    <nav class="yyg-content-product">
-        <div class="dp-broad__li"style="margin-top:-1px;border-bottom: 1px solid #ededed;">
-            <a class="block" href="#/activity/17">
-                <div class="dp-broad__img main-page-goods-img" style="margin-bottom: 12px;">
-                    <img lazyload="" lazy-src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png" src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png">
-                </div>
-                <h3 class="dp-broad__title dm-nowrap-2 ng-binding" style="text-align: center;">艾派德</h3>
-            </a>
-            <p class="dm-nowrap" style="font-size: 1.2rem;color: #666666;line-height: 18px;margin-bottom: 3px">参与人数 <span style="color: #519fff;" class="ng-binding">21/100</span></p>
-            <div class="dp-broad__content">
-                <div class="content_btn btn iconfont-shopcart-outline" ng-click="addToCart(broad)" ontouchstart="domController.changeAddCartState(this,true)" ontouchend="domController.changeAddCartState(this,false)"></div>
-                <div class="progress_box">
-                    <span class="text">开奖进度 <em class="ng-binding">21%</em></span>
-                    <div class="progress"><span class="num" view-progress=""  style="width: 21%;"></span></div>
-                </div>
-            </div>
-            <div class="dp-broad__li" ng-repeat="broad in activityData track by $index" style="margin-top:-1px;border-bottom: 1px solid #ededed;">
-                <a class="block" href="#/activity/17">
-                    <div class="dp-broad__img main-page-goods-img" style="margin-bottom: 12px;">
-                        <img lazyload="" lazy-src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png" src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png">
-                        <!--<img ng-src="{{::broad.goods_img}}" width="100%" height="auto"/>-->
-                    </div>
-                    <h3 class="dp-broad__title dm-nowrap-2 ng-binding">艾派德</h3>
-                </a>
-                <p class="dm-nowrap" style="font-size: 1.2rem;color: #666666;line-height: 18px;margin-bottom: 3px">参与人数 <span style="color: #519fff;" class="ng-binding">21/100</span></p>
-                <div class="dp-broad__content">
-                    <div class="content_btn btn iconfont-shopcart-outline" ng-click="addToCart(broad)" ontouchstart="domController.changeAddCartState(this,true)" ontouchend="domController.changeAddCartState(this,false)"></div>
-                    <div class="progress_box">
-                        <span class="text">开奖进度 <em class="ng-binding">21%</em></span>
-
-                        <div class="progress"><span class="num" view-progress="" progress="::(((broad.need_num - broad.remain_num) / broad.need_num))" style="width: 21%;"></span></div>
-                    </div>
-                </div>
-                <!--限购专区的标签-->
-                <!-- ngIf: ::(broad.activity_type == 2) -->
-                <!-- ngIf: (broad.activity_type == 3) --><span class="limit-flag" ng-if="(broad.activity_type == 3)">限购10人次</span><!-- end ngIf: (broad.activity_type == 3) -->
-            </div>
-            <div class="dp-broad__li" ng-repeat="broad in activityData track by $index" style="margin-top:-1px;border-bottom: 1px solid #ededed;">
-                <a class="block" href="#/activity/17">
-                    <div class="dp-broad__img main-page-goods-img" style="margin-bottom: 12px;">
-                        <img lazyload="" lazy-src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png" src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png">
-                        <!--<img ng-src="{{::broad.goods_img}}" width="100%" height="auto"/>-->
-                    </div>
-                    <h3 class="dp-broad__title dm-nowrap-2 ng-binding">艾派德</h3>
-                </a>
-                <p class="dm-nowrap" style="font-size: 1.2rem;color: #666666;line-height: 18px;margin-bottom: 3px">参与人数 <span style="color: #519fff;" class="ng-binding">21/100</span></p>
-                <div class="dp-broad__content">
-                    <div class="content_btn btn iconfont-shopcart-outline" ng-click="addToCart(broad)" ontouchstart="domController.changeAddCartState(this,true)" ontouchend="domController.changeAddCartState(this,false)"></div>
-                    <div class="progress_box">
-                        <span class="text">开奖进度 <em class="ng-binding">21%</em></span>
-
-                        <div class="progress"><span class="num" view-progress="" progress="::(((broad.need_num - broad.remain_num) / broad.need_num))" style="width: 21%;"></span></div>
-                    </div>
-                </div>
-                <!--限购专区的标签-->
-                <!-- ngIf: ::(broad.activity_type == 2) -->
-                <!-- ngIf: (broad.activity_type == 3) --><span class="limit-flag" ng-if="(broad.activity_type == 3)">限购10人次</span><!-- end ngIf: (broad.activity_type == 3) -->
-            </div>
-            <div class="dp-broad__li" ng-repeat="broad in activityData track by $index" style="margin-top:-1px;border-bottom: 1px solid #ededed;">
-                <a class="block" href="#/activity/17">
-                    <div class="dp-broad__img main-page-goods-img" style="margin-bottom: 12px;">
-                        <img lazyload="" lazy-src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png" src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png">
-                        <!--<img ng-src="{{::broad.goods_img}}" width="100%" height="auto"/>-->
-                    </div>
-                    <h3 class="dp-broad__title dm-nowrap-2 ng-binding">艾派德</h3>
-                </a>
-                <p class="dm-nowrap" style="font-size: 1.2rem;color: #666666;line-height: 18px;margin-bottom: 3px">参与人数 <span style="color: #519fff;" class="ng-binding">21/100</span></p>
-                <div class="dp-broad__content">
-                    <div class="content_btn btn iconfont-shopcart-outline" ng-click="addToCart(broad)" ontouchstart="domController.changeAddCartState(this,true)" ontouchend="domController.changeAddCartState(this,false)"></div>
-                    <div class="progress_box">
-                        <span class="text">开奖进度 <em class="ng-binding">21%</em></span>
-
-                        <div class="progress"><span class="num" view-progress="" progress="::(((broad.need_num - broad.remain_num) / broad.need_num))" style="width: 21%;"></span></div>
-                    </div>
-                </div>
-                <!--限购专区的标签-->
-                <!-- ngIf: ::(broad.activity_type == 2) -->
-                <!-- ngIf: (broad.activity_type == 3) --><span class="limit-flag" ng-if="(broad.activity_type == 3)">限购10人次</span><!-- end ngIf: (broad.activity_type == 3) -->
-            </div>
-            <div class="dp-broad__li" ng-repeat="broad in activityData track by $index" style="margin-top:-1px;border-bottom: 1px solid #ededed;">
-                <a class="block" href="#/activity/17">
-                    <div class="dp-broad__img main-page-goods-img" style="margin-bottom: 12px;">
-                        <img lazyload="" lazy-src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png" src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png">
-                        <!--<img ng-src="{{::broad.goods_img}}" width="100%" height="auto"/>-->
-                    </div>
-                    <h3 class="dp-broad__title dm-nowrap-2 ng-binding">艾派德</h3>
-                </a>
-                <p class="dm-nowrap" style="font-size: 1.2rem;color: #666666;line-height: 18px;margin-bottom: 3px">参与人数 <span style="color: #519fff;" class="ng-binding">21/100</span></p>
-                <div class="dp-broad__content">
-                    <div class="content_btn btn iconfont-shopcart-outline" ng-click="addToCart(broad)" ontouchstart="domController.changeAddCartState(this,true)" ontouchend="domController.changeAddCartState(this,false)"></div>
-                    <div class="progress_box">
-                        <span class="text">开奖进度 <em class="ng-binding">21%</em></span>
-
-                        <div class="progress"><span class="num" view-progress="" progress="::(((broad.need_num - broad.remain_num) / broad.need_num))" style="width: 21%;"></span></div>
-                    </div>
-                </div>
-                <!--限购专区的标签-->
-                <!-- ngIf: ::(broad.activity_type == 2) -->
-                <!-- ngIf: (broad.activity_type == 3) --><span class="limit-flag" ng-if="(broad.activity_type == 3)">限购10人次</span><!-- end ngIf: (broad.activity_type == 3) -->
-            </div>
-            <div class="dp-broad__li" ng-repeat="broad in activityData track by $index" style="margin-top:-1px;border-bottom: 1px solid #ededed;">
-                <a class="block" href="#/activity/17">
-                    <div class="dp-broad__img main-page-goods-img" style="margin-bottom: 12px;">
-                        <img lazyload="" lazy-src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png" src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png">
-                        <!--<img ng-src="{{::broad.goods_img}}" width="100%" height="auto"/>-->
-                    </div>
-                    <h3 class="dp-broad__title dm-nowrap-2 ng-binding">艾派德</h3>
-                </a>
-                <p class="dm-nowrap" style="font-size: 1.2rem;color: #666666;line-height: 18px;margin-bottom: 3px">参与人数 <span style="color: #519fff;" class="ng-binding">21/100</span></p>
-                <div class="dp-broad__content">
-                    <div class="content_btn btn iconfont-shopcart-outline" ng-click="addToCart(broad)" ontouchstart="domController.changeAddCartState(this,true)" ontouchend="domController.changeAddCartState(this,false)"></div>
-                    <div class="progress_box">
-                        <span class="text">开奖进度 <em class="ng-binding">21%</em></span>
-
-                        <div class="progress"><span class="num" view-progress="" progress="::(((broad.need_num - broad.remain_num) / broad.need_num))" style="width: 21%;"></span></div>
-                    </div>
-                </div>
-                <!--限购专区的标签-->
-                <!-- ngIf: ::(broad.activity_type == 2) -->
-                <!-- ngIf: (broad.activity_type == 3) --><span class="limit-flag" ng-if="(broad.activity_type == 3)">限购10人次</span><!-- end ngIf: (broad.activity_type == 3) -->
-            </div>
-            <div class="dp-broad__li" ng-repeat="broad in activityData track by $index" style="margin-top:-1px;border-bottom: 1px solid #ededed;">
-                <a class="block" href="#/activity/17">
-                    <div class="dp-broad__img main-page-goods-img" style="margin-bottom: 12px;">
-                        <img lazyload="" lazy-src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png" src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png">
-                        <!--<img ng-src="{{::broad.goods_img}}" width="100%" height="auto"/>-->
-                    </div>
-                    <h3 class="dp-broad__title dm-nowrap-2 ng-binding">艾派德</h3>
-                </a>
-                <p class="dm-nowrap" style="font-size: 1.2rem;color: #666666;line-height: 18px;margin-bottom: 3px">参与人数 <span style="color: #519fff;" class="ng-binding">21/100</span></p>
-                <div class="dp-broad__content">
-                    <div class="content_btn btn iconfont-shopcart-outline" ng-click="addToCart(broad)" ontouchstart="domController.changeAddCartState(this,true)" ontouchend="domController.changeAddCartState(this,false)"></div>
-                    <div class="progress_box">
-                        <span class="text">开奖进度 <em class="ng-binding">21%</em></span>
-
-                        <div class="progress"><span class="num" view-progress="" progress="::(((broad.need_num - broad.remain_num) / broad.need_num))" style="width: 21%;"></span></div>
-                    </div>
-                </div>
-                <!--限购专区的标签-->
-                <!-- ngIf: ::(broad.activity_type == 2) -->
-                <!-- ngIf: (broad.activity_type == 3) --><span class="limit-flag" ng-if="(broad.activity_type == 3)">限购10人次</span><!-- end ngIf: (broad.activity_type == 3) -->
-            </div>
-            <div class="dp-broad__li" ng-repeat="broad in activityData track by $index" style="margin-top:-1px;border-bottom: 1px solid #ededed;">
-                <a class="block" href="#/activity/17">
-                    <div class="dp-broad__img main-page-goods-img" style="margin-bottom: 12px;">
-                        <img lazyload="" lazy-src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png" src="http://c.damaiplus.com/1simple/uploads/2016/06/29fsOf9Ujtx8e.png">
-                        <!--<img ng-src="{{::broad.goods_img}}" width="100%" height="auto"/>-->
-                    </div>
-                    <h3 class="dp-broad__title dm-nowrap-2 ng-binding">艾派德</h3>
-                </a>
-                <p class="dm-nowrap" style="font-size: 1.2rem;color: #666666;line-height: 18px;margin-bottom: 3px">参与人数 <span style="color: #519fff;" class="ng-binding">21/100</span></p>
-                <div class="dp-broad__content">
-                    <div class="content_btn btn iconfont-shopcart-outline" ng-click="addToCart(broad)" ontouchstart="domController.changeAddCartState(this,true)" ontouchend="domController.changeAddCartState(this,false)"></div>
-                    <div class="progress_box">
-                        <span class="text">开奖进度 <em class="ng-binding">21%</em></span>
-
-                        <div class="progress"><span class="num" view-progress="" progress="::(((broad.need_num - broad.remain_num) / broad.need_num))" style="width: 21%;"></span></div>
-                    </div>
-                </div>
-                <!--限购专区的标签-->
-                <!-- ngIf: ::(broad.activity_type == 2) -->
-                <!-- ngIf: (broad.activity_type == 3) --><span class="limit-flag" ng-if="(broad.activity_type == 3)">限购10人次</span><!-- end ngIf: (broad.activity_type == 3) -->
-            </div>
-            <!--限购专区的标签-->
-            <!-- ngIf: ::(broad.activity_type == 2) -->
-            <!-- ngIf: (broad.activity_type == 3) --><span class="limit-flag" ng-if="(broad.activity_type == 3)">限购10人次</span><!-- end ngIf: (broad.activity_type == 3) -->
+    <nav class="fooff">
+    <nav class="yyg-content-indexs">
+        <div class="yyg-content-product">
+            <ul>
+                <li><img src="image/商品1.jpg" alt=""></li>
+                <li>苹果笔记本</li>
+                <li>参与人数 <p>21/100</p></li>
+                <li>开奖进度 <p>21%</p></li>
+                <li><progress style="width:80%" max="100" value="20" id="progress"></progress>
+                    <a href="Shopping.html"><img src="image/购物车%20(1).png" alt="" style="width: 50px;height: 50px"></a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <nav class="yyg-content-indexs">
+        <div class="yyg-content-product">
+            <ul>
+                <li><img src="image/商品1.jpg" alt=""></li>
+                <li>苹果笔记本</li>
+                <li>参与人数 <p>21/100</p></li>
+                <li>开奖进度 <p>21%</p></li>
+                <li><progress style="width:80%" max="100" value="20" ></progress>
+                    <a href="Shopping.html"><img src="image/购物车%20(1).png" alt="" style="width: 50px;height: 50px"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="yyg-content-indexs">
+        <div class="yyg-content-product">
+            <ul>
+                <li><img src="image/商品1.jpg" alt=""></li>
+                <li>苹果笔记本</li>
+                <li>参与人数 <p>21/100</p></li>
+                <li>开奖进度 <p>21%</p></li>
+                <li><progress style="width:80%" max="100" value="20"></progress>
+                    <a href="Shopping.html"><img src="image/购物车%20(1).png" alt="" style="width: 50px;height: 50px"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="yyg-content-indexs">
+        <div class="yyg-content-product">
+            <ul>
+                <li><img src="image/商品1.jpg" alt=""></li>
+                <li>苹果笔记本</li>
+                <li>参与人数 <p>21/100</p></li>
+                <li>开奖进度 <p>21%</p></li>
+                <li><progress style="width:80%" max="100" value="20" ></progress>
+                    <a href="Shopping.html"><img src="image/购物车%20(1).png" alt="" style="width: 50px;height: 50px"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="yyg-content-indexs">
+        <div class="yyg-content-product">
+            <ul>
+                <li><img src="image/商品1.jpg" alt=""></li>
+                <li>苹果笔记本</li>
+                <li>参与人数 <p>21/100</p></li>
+                <li>开奖进度 <p>21%</p></li>
+                <li><progress style="width:80%" max="100" value="20" ></progress>
+                    <a href="Shopping.html"><img src="image/购物车%20(1).png" alt="" style="width: 50px;height: 50px"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="yyg-content-indexs">
+        <div class="yyg-content-product">
+            <ul>
+                <li><img src="image/商品1.jpg" alt=""></li>
+                <li>苹果笔记本</li>
+                <li>参与人数 <p>21/100</p></li>
+                <li>开奖进度 <p>21%</p></li>
+                <li><progress style="width:80%" max="100" value="20" ></progress>
+                    <a href="Shopping.html"><img src="image/购物车%20(1).png" alt="" style="width: 50px;height: 50px"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     </nav>
     <footer class="yyg-footer-fixed">
         <div class="yyg-footer-img">
-            <a><img src="image/首页灰.png" alt="1"></a>
+            <a href="index.html"><img src="image/首页灰.png" alt="1"></a>
         </div>
         <div class="yyg-footer-img">
-           <a> <img src="image/最新揭晓灰.png" alt="2"></a>
+            <a href="中奖页.html"> <img src="image/最新揭晓灰.png" alt="2"></a>
         </div>
         <div class="yyg-footer-img">
-            <a><img src="image/购物车灰.png" alt="3"></a>
+            <a href="Shopping.html"><img src="image/购物车灰.png" alt="3"></a>
         </div>
         <div class="yyg-footer-img">
-            <a><img src="image/我灰.png" alt="4"></a>
+            <a href="个人资料.html"><img src="image/我灰.png" alt="4"></a>
         </div>
     </footer>
     <script src="lib/jquery/jquery.min.js"> </script>
+
     <script>
         jQuery(function($){
             $('#demo1').slideBox();
@@ -254,7 +170,9 @@
             });
         });
     </script>
-
     <script src="lib/jquery/jquery.slideBox.js"></script>
+    <script src="js/shopping.js">
+
+    </script>
 </body>
 </html>

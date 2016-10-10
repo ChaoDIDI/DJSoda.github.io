@@ -1,0 +1,96 @@
+
+body{
+    margin: 0 ;
+}
+.list {
+    width: 100%;
+    height: 100px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    -moz-background-size:100% 100%;  /* 老版本的 Firefox */
+}
+.my-header-hans{
+    background-color: #F10061;
+    margin-top: -2px;
+    /*position: absolute;*/
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.my-header-float{
+    margin: 0 auto;
+    width: 100px;
+    height:100px;
+    /*margin-top: 40px;*/
+    /*margin-left: 44%;*/
+}
+.my-header-hans-img1 {
+    margin: 0;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.my-header-hans-img2{
+    height: 40px;
+    width: 50px;
+    float: right;
+    margin-top: -30px;
+    margin-right: -10px;
+}
+.my-header-hans-img3{
+    width: 70px;
+    height: 60px;
+    float: right;
+    margin-top: -100px;
+}
+.fonty{
+    margin-top: -18px;
+}
+.my-header-float-fonts{
+     margin-top: 5px;
+}
+.fonts{
+    background-color: white;
+    color: #F10061;
+    width: 13%;
+    height: 35px;
+    line-height: 35px;
+    margin:  0 auto;
+}
+.my-header-hansa{
+    margin-bottom: 20px;
+}
+.my-content-block{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.my-content-img1{
+    width: 50%;
+}
+.my-content-img2{
+    width: 50%;
+}
+.my-content-img3{
+    width: 50%;
+}
+.my-content-img4{
+    width: 50%;
+}
+.yyg-footer-fixed{
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+.yyg-footer-img img{
+    width: 70px;
+    height: 70px;
+}
+
