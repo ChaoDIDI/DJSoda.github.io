@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购买页</title>
+</head>
+<body>
+<style>
+    *{
+        -ms-word-break: break-all;
+        word-break: break-all;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        -webkit-tap-highlight-color: transparent;
+    }
+    body, button, input, select, textarea{
+        font:12px/1 Lucida Grande, Microsoft YaHei, Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif
+
+    }
+    blockquote, body, button, dd, dl, dt, fieldset, figcaption, figure, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        line-height: 1.6;
+    }
+    div{
+        display: block;
+    }
+    .beneficiary[_v-57c65859], .idcard[_v-57c65859], .name[_v-57c65859]{
+        display: -webkit-box;
+        font-size: .7rem;
+        height: 2rem;
+        line-height: 2rem;
+        border-bottom: 1px solid #bbb;
+    }
+    .beneficiary input[_v-57c65859], .idcard input[_v-57c65859], .name input[_v-57c65859]{
+        font-size: .7rem;
+        display: block;
+        -webkit-box-flex: 6;
+        height: 2rem;
+        line-height: 2rem;
+        box-flex: 6;
+        border: 0;
+    }
+    input[type=password], input[type=text], textarea{
+        -webkit-tap-highlight-color:rgba(255, 255, 255, 0);
+    }
+</style>
+<div>
+    <section class="order" _v-57c65859="">
+        <div class="name" _v-57c65859=""><span class="tip" _v-57c65859="">被保障人：</span> <input type="text" placeholder="帮家人加入时,请填写家人姓名" maxlength="18" _v-57c65859="">
+        </div>
+        <div class="idcard" _v-57c65859=""><span class="tip" _v-57c65859="">身份证号：</span> <input type="text" placeholder="用于申请保障，会严格保密" maxlength="18" _v-57c65859="">
+            <div class="select-icon" _v-57c65859=""></div>
+        </div>
+        <div class="beneficiary" _v-57c65859="" style=""><span class="tip" _v-57c65859="">受益人：</span> <input type="text" placeholder="请填写姓名" maxlength="18" _v-57c65859="">
+            <div class="select-user" _v-57c65859="">
+                <div class="beneficiary-btn" _v-c900920c=""><span _v-c900920c="" id="">关系</span>
+                    <div class="arrow-bottom arrow-box" _v-c900920c=""><b class="bottom" _v-c900920c=""><i class="bottom-arrow1" _v-c900920c=""></i><i class="bottom-arrow2" _v-c900920c=""></i></b>
+                    </div>
+                </div>
+                <div class="mint-popup mint-popup-bottom popup-slide-bottom-transition" _v-d059063a="" pop-transition="popup-slide" style="display: none;">
+                    <div class="picker" _v-d059063a="" values="2012">
+                        <div class="picker-toolbar">
+                            <div class="picker-title" _v-d059063a="">
+                                <div class="cancel-button" _v-d059063a=""><a href="javascript:;" _v-d059063a="">关闭</a>
+                                </div>
+                                <div class="title" _v-d059063a="">受益人是被保障人的：</div>
+                                <div class="submit-button" _v-d059063a=""><a href="javascript:;" _v-d059063a="">完成</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picker-items">
+                            <div class="picker-slot picker-slot-center slot1" style="flex: 1 1 0%;">
+                                <div class="picker-slot-wrapper" style="height: 350px; transform: translate(0px, 70px) translateZ(0px);">
+                                    <div class="picker-item">父母</div>
+                                    <div class="picker-item picker-selected">配偶</div>
+                                    <div class="picker-item">子女</div>
+                                    <div class="picker-item">其他法定继承人</div>
+                                </div>
+                            </div>
+                            <div class="picker-center-highlight"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="beneficiary-text" _v-57c65859="" style=""><p _v-57c65859="">如果被保障人意外伤残，保障金支付给本人</p>
+        <p _v-57c65859="">意外身故，保障金支付给受益人</p></section>
+    <div class="error-tips" _v-57c65859=""></div>
+    <section _v-11410e04="" class="recharge-block ">
+        <div class="title" _v-11410e04="">充值金额<span _v-11410e04="">精算师评估，本计划每年花费约<i _v-11410e04="">50</i>元</span></div>
+        <div class="list" _v-11410e04="">
+            <div _v-11410e04="" class="no-check"><a href="javascript:;" _v-11410e04="">9元</a></div>
+            <div _v-11410e04="" class="no-check"><a href="javascript:;" _v-11410e04="">30元</a></div>
+            <div _v-11410e04="" class="no-check"><input type="number" placeholder="其它金额" _v-11410e04="" value=""></div>
+        </div>
+    </section>
+    <span class="errmsg-font" _v-11410e04=""></span></div>
+<div>
+    <div class="addbtn-wrap" _v-6a352507=""><a class="adduser" href="javascript:;" _v-6a352507=""><i class="add-icon" _v-6a352507=""></i>为更多人添加保障</a>
+    </div>
+</div>
+<div>
+    <section class="submit-block" _v-35105df2=""><span class="rule" _v-35105df2="">我同意<a _v-35105df2="" href="#">《健康及职业要求》</a>、<a _v-35105df2="" href="#">《会员公约》</a>、<a _v-35105df2="" href="#">《计划条款》</a></span>
+        <div class="button disabled" _v-35105df2=""><a href="javascript:;" _v-35105df2="">微信充值</a></div>
+    </section>
+</div>
+<div class="overlay fade-transition" _v-380d63b5="" style="display: none;">
+    <div class="dialog dialog-transition" _v-380d63b5="" style="display: none;">
+        <section class="phone-verify" _v-2faf7bb2="">
+            <div class="phone-input" _v-2faf7bb2=""> +86<input class="phone-input-num" type="number" pattern="[0-9]*" placeholder="请输入手机号" _v-2faf7bb2=""></div>
+            <div class="phone-input" _v-2faf7bb2=""> 验证码<input class="phone-input-code" type="number" node-type="verifyCode" pattern="[0-9]*" placeholder="请输入验证码" _v-2faf7bb2=""> <a href="javascript:;" class="get-code" _v-2faf7bb2="">获取验证码</a></div>
+            <p class="phone-tip" _v-2faf7bb2="">收不到验证码？请拨打客服电话<a href="tel:400-686-1179" _v-2faf7bb2="">400-686-1179</a>
+            </p><a href="tel:400-686-1179" _v-2faf7bb2=""> </a></section>
+        <a href="tel:400-686-1179" _v-2faf7bb2=""> </a><a class="verify-button" node-type="loginSubmit" href="javascript:;" _v-2faf7bb2="">验证</a></div>
+</div>
+<div class="tips-wrap fade-transition" _v-5f058bb6="" style="display: none;"><span class="tips" _v-5f058bb6="" style="display: none;"></span></div>
+<div class="page-loading fade-transition" _v-24715e25="" style="display: none;">
+    <div class="mask" _v-24715e25=""></div>
+    <div class="spinner" _v-24715e25="">
+        <div class="spinner-container container1" _v-24715e25="">
+            <div class="circle1" _v-24715e25=""></div>
+            <div class="circle2" _v-24715e25=""></div>
+            <div class="circle3" _v-24715e25=""></div>
+            <div class="circle4" _v-24715e25=""></div>
+        </div>
+        <div class="spinner-container container2" _v-24715e25="">
+            <div class="circle1" _v-24715e25=""></div>
+            <div class="circle2" _v-24715e25=""></div>
+            <div class="circle3" _v-24715e25=""></div>
+            <div class="circle4" _v-24715e25=""></div>
+        </div>
+        <div class="spinner-container container3" _v-24715e25="">
+            <div class="circle1" _v-24715e25=""></div>
+            <div class="circle2" _v-24715e25=""></div>
+            <div class="circle3" _v-24715e25=""></div>
+            <div class="circle4" _v-24715e25=""></div>
+        </div>
+    </div>
+</div>
+<div class="overlay fade-transition" _v-53b70ec9="" style="display: none;">
+    <div class="dialog dialog-transition" _v-53b70ec9="" style="display: none;">
+        <div class="buttondialog-word" _v-53b70ec9=""></div>
+        <div class="buttondialog-op" _v-53b70ec9=""><a href="javascript:;" class="cancel" _v-53b70ec9=""></a> <a href="javascript:;" _v-53b70ec9=""></a></div>
+    </div>
+</div>
+<div class="overlay fade-transition" _v-d984fc36="" style="display: none;">
+    <div class="dialog dialog-transition" _v-d984fc36="" style="display: none;"><p class="title" _v-d984fc36=""><strong _v-d984fc36=""></strong></p>
+        <p class="info" _v-d984fc36=""></p>
+        <div class="buttondialog-op" _v-d984fc36=""><a href="javascript:;" _v-d984fc36="">确定</a></div>
+    </div>
+</div>
+</body>
+</html>

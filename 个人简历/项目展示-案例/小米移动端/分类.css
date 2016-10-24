@@ -151,7 +151,7 @@ footer>a>p{
 }
  }
    @media (max-width:640px){
-    header{
+       header{
     height: 6rem;
 }
 header>a:nth-of-type(1){
