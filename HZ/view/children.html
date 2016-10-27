@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html data-dpr="2" max-width="540" style="font-size: 46.375px;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>children</title>
+    <meta name="hotcss">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="../comprehensive/item.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<script>
+    (function (window, document) {
+        if (window.devicePixelRatio && devicePixelRatio >= 2) {
+            var testElem = document.createElement('div');
+            testElem.style.border = '.5px solid transparent';
+            document.body.appendChild(testElem);
+            if (testElem.offsetHeight == 1) {
+                document.querySelector('html').classList.add('hackline')
+            }
+            document.body.removeChild(testElem)
+        }
+        var hotcss = {};
+        (function () {
+            var viewportEl = document.querySelector('meta[name="viewport"]'), hotcssEl = document.querySelector('meta[name="hotcss"]'), dpr = window.devicePixelRatio || 1, maxWidth = 540, designWidth = 0;
+            dpr = dpr >= 3 ? 3 : (dpr >= 2 ? 2 : 1);
+            if (hotcssEl) {
+                var hotcssCon = hotcssEl.getAttribute('content');
+                if (hotcssCon) {
+                    var initialDprMatch = hotcssCon.match(/initial\-dpr=([\d\.]+)/);
+                    if (initialDprMatch) {
+                        dpr = parseFloat(initialDprMatch[1])
+                    }
+                    var maxWidthMatch = hotcssCon.match(/max\-width=([\d\.]+)/);
+                    if (maxWidthMatch) {
+                        maxWidth = parseFloat(maxWidthMatch[1])
+                    }
+                    var designWidthMatch = hotcssCon.match(/design\-width=([\d\.]+)/);
+                    if (designWidthMatch) {
+                        designWidth = parseFloat(designWidthMatch[1])
+                    }
+                }
+            }
+            document.documentElement.setAttribute('data-dpr', dpr);
+            hotcss.dpr = dpr;
+            document.documentElement.setAttribute('max-width', maxWidth);
+            hotcss.maxWidth = maxWidth;
+            if (designWidth) {
+                document.documentElement.setAttribute('design-width', designWidth);
+                hotcss.designWidth = designWidth
+            }
+            var scale = 1 / dpr, content = 'width=device-width, initial-scale=' + scale + ', minimum-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no';
+            if (viewportEl) {
+                viewportEl.setAttribute('content', content)
+            } else {
+                viewportEl = document.createElement('meta');
+                viewportEl.setAttribute('name', 'viewport');
+                viewportEl.setAttribute('content', content);
+                document.head.appendChild(viewportEl)
+            }
+        })();
+        hotcss.px2rem = function (px, designWidth) {
+            if (!designWidth) {
+                designWidth = parseInt(hotcss.designWidth, 10)
+            }
+            return parseInt(px, 10) * 320 / designWidth / 20
+        };
+        hotcss.rem2px = function (rem, designWidth) {
+            if (!designWidth) {
+                designWidth = parseInt(hotcss.designWidth, 10)
+            }
+            return rem * 20 * designWidth / 320
+        };
+        hotcss.mresize = function () {
+            var innerWidth = document.documentElement.getBoundingClientRect().width || window.innerWidth;
+            if (hotcss.maxWidth && (innerWidth / hotcss.dpr > hotcss.maxWidth)) {
+                innerWidth = hotcss.maxWidth * hotcss.dpr
+            }
+            if (!innerWidth) {
+                return false
+            }
+            document.documentElement.style.fontSize = (innerWidth * 20 / 320) + 'px';
+            hotcss.callback && hotcss.callback()
+        };
+        hotcss.mresize();
+        window.addEventListener('resize', function () {
+            clearTimeout(hotcss.tid);
+            hotcss.tid = setTimeout(hotcss.mresize, 33)
+        }, false);
+        window.addEventListener('load', hotcss.mresize, false);
+        setTimeout(function () {
+            hotcss.mresize()
+        }, 333);
+        window.hotcss = hotcss;
+        document.body.addEventListener('touchstart', function () {
+        })
+    })(window, document);
+</script>
+<section class="wrapper">
+    <section class="child-banner">
+        <div><img class="banner-img" src="../children/childBanner.png"></div>
+        <div class="banner-info"><h2>少年互助</h2>
+            <p>最高可得30万元保障</p>
+            <p>出生后30天-17周岁</p></div>
+    </section>
+    <section class="vip-wrap">
+        <div class="vip-info"><span> <p class="info-num" node-type="joinPeopleNum">79243</p> <p class="info-font">
+            已加入会员(人)</p> </span> <em class="vip-info-border"></em> <span> <p class="info-num"
+                                                                             node-type="countIncrement">530</p> <p
+                class="info-font">近3日新增(人)</p> </span></div>
+    </section>
+    <section id="child-content">
+        <div class="know-us"><h1>了解互助</h1>
+            <div class="know-us-font"><p>据调查</p>
+                <p>儿童大病治疗费用平均10-30万元</p></div>
+            <div class="know-us-icon">
+                <img src="../children/首页4.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="itemContent"><!--少儿互助规则-->
+        <div id="rule" class="help-rule">
+            <h1>互助规则</h1>
+            <ul>
+                <li class="child-people li-border-bottom">加入条件
+                    <span>出生后30天-17周岁，身体健康</span>
+                    <i class="arrow"></i>
+                </li>
+                <div class="hidden-ctn">
+                    <section id="childPeople" class="plan-info-msg">
+                        <em></em>
+                        <p class="font-one">1.加入年龄：出生后30天-17周岁</p>
+                        <p class="font-one">2.保障年龄：出生后30天-17周岁，年满18周岁后将自动转入中青年抗癌计划，继续享受保障。</p>
+                        <p class="font-one font-bottom">3.为保证公平性，加入者还需要保证加入计划时身体健康，未曾患有以下重大疾病：</p>
+                        <table class="plan-table people-table">
+                            <tbody>
+                            <tr>
+                                <th>肿瘤<br>原位癌<br>癌前病变</th>
+                                <th class="th-two">包括恶性肿瘤、白血病，但已确诊为良性息肉、囊肿、结节和赘生物且已治愈的除外</th>
+                            </tr>
+                            <tr>
+                                <td>心脑血管疾病</td>
+                                <td>心脏病（心功能2级以上）、冠心病（含心绞痛、心肌梗死等）、高血压（2级或以上）、脑血管/主动脉疾病</td>
+                            </tr>
+                            <tr>
+                                <td>慢性疾病</td>
+                                <td>糖尿病、甲亢（未治疗，症状严重）、支气管哮喘（重度或以上）、肝硬化、肾脏疾病</td>
+                            </tr>
+                            <tr>
+                                <td>传染性疾病</td>
+                                <td>病毒性肝炎、艾滋病、梅毒等</td>
+                            </tr>
+                            <tr>
+                                <td>其他</td>
+                                <td>癫痫等精神科疾病、智力发育不全、身体残障等</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="font-one">4.认同并承诺遵守《会员公约》及计划条款。</p>
+                    </section>
+                </div>
+
+                <li class="child-cover li-border-bottom">保障范围
+                    <span>白血病、癌症等50种大病</span>
+                    <i class="arrow"></i>
+                </li>
+                <div class="hidden-ctn">
+                    <section id="childCover" class="plan-info-msg">
+                        <em></em>
+                        <p class="font-one">涵盖恶性肿瘤（俗称癌症，包含白血病）、良性脑肿瘤、严重烧伤、重大器官移植、双耳失聪、双目失明等50种重大疾病。</p>
+                    </section>
+                </div>
+
+                <li class="child-num li-border-bottom">保障额度
+                    <span>最高<em>30万元</em>保障</span>
+                    <i class="arrow"></i>
+                </li>
+                <div class="hidden-ctn">
+                    <section id="childNum" class="plan-info-msg">
+                        <em></em>
+                        <table class="child-table">
+                            <tbody>
+                            <tr>
+                                <th>项目</th>
+                                <th>最高互助金额</th>
+                            </tr>
+                            <tr>
+                                <td>50种重大疾病</td>
+                                <td>30万元</td>
+                            </tr>
+                            <tr>
+                                <td>低度恶性肿瘤</td>
+                                <td>5万元</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="font-one">* 低度恶性肿瘤:经医学专家认定属于预后较好、生存期长、治疗费用低的恶性肿瘤。</p>
+                    </section>
+                </div>
+
+                <li class="plan-rule li-border-bottom">分摊规则
+                    <span>单次不超过<em>3元</em>，每年约<em>150元</em></span>
+                    <i class="arrow"></i>
+                </li>
+                <div class="hidden-ctn">
+                    <section id="planRule" class="plan-info-msg">
+                        <em></em>
+                        <p class="font-one font-bottom">如有会员不幸患癌，其他会员会均摊帮助，单次均摊不超过3元。</p>
+                        <table class="plan-table">
+                            <tbody>
+                            <tr>
+                                <th>会员总数</th>
+                                <th>均摊金额</th>
+                                <th>互助金</th>
+                            </tr>
+                            <tr>
+                                <td>5万人</td>
+                                <td>3.0元</td>
+                                <td>15万元</td>
+                            </tr>
+                            <tr>
+                                <td>10万人</td>
+                                <td>3.0元</td>
+                                <td>30万元</td>
+                            </tr>
+                            <tr>
+                                <td>30万人</td>
+                                <td>1.0元</td>
+                                <td>30万元</td>
+                            </tr>
+                            <tr>
+                                <td>100万人</td>
+                                <td>0.3元</td>
+                                <td>30万元</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="font-one">说明：</p>
+                        <p class="font-one">(1) 如上表，会员数量越多，单次分摊金额越低。</p>
+                        <p class="font-one">(2) 会员账户余额归本人所有，只有发生互助时才会扣除相应金额。</p>
+                    </section>
+                </div>
+
+                <li class="plan-continue li-border-bottom">保障延续
+                    <span>账户余额不低于1元即可</span>
+                    <i class="arrow"></i>
+                </li>
+                <div class="hidden-ctn">
+                    <section id="planContinue" class="plan-info-msg">
+                        <em></em>
+                        <p class="font-one font-bottom">为保障会员能及时获得互助保障金，每人的账户余额不得低于1元。</p>
+                        <table class="plan-table">
+                            <tbody>
+                            <tr>
+                                <th class="th-one">余额</th>
+                                <th>保障状态</th>
+                                <th>余额状态</th>
+                            </tr>
+                            <tr>
+                                <td>余额≥30元</td>
+                                <td><i class="yes-icon"></i></td>
+                                <td class="continue-left">充足</td>
+                            </tr>
+                            <tr>
+                                <td>9元≤余额&lt;30元</td>
+                                <td><i class="yes-icon"></i></td>
+                                <td class="continue-left">良，建议充值至30元以上，避免频繁充值</td>
+                            </tr>
+                            <tr>
+                                <td>1元≤余额&lt;9元</td>
+                                <td><i class="yes-icon"></i></td>
+                                <td class="continue-left">不足，建议及时充值，以免因余额不足失去保障</td>
+                            </tr>
+                            <tr>
+                                <td>余额&lt;1元</td>
+                                <td><i class="no-icon"></i></td>
+                                <td class="continue-left">暂时失去保障，您可以在15天内充值以恢复保障，否则将自动退出</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="font-one">说明：</p>
+                        <p class="font-one">(1) 余额低于9元时，我们会通过微信或短信提醒充值。</p>
+                        <p class="font-one">(2) 互助金由基金会独立托管并定期公示。</p>
+                    </section>
+                </div>
+
+                <li class="plan-wait li-border-bottom">等待期
+                    <span class="wait-font">180天（为防止带病加入）</span>
+                    <i class="arrow"></i>
+                </li>
+                <div class="hidden-ctn">
+                    <section id="waitTime" class="plan-info-msg">
+                        <em></em>
+                        <p class="wait-font font-one">设置等待期的目的是为了防止已患病或者即将患病的人加入，即常说的逆选择。</p>
+                        <p class="font-one">在等待期内，若患病不可以申请互助金，但须履行分摊义务。等待期过后，会员如不幸罹患癌症，本计划项下的其他互助会员会为其发起互助。</p>
+                    </section>
+                </div>
+            </ul>
+        </div>
+        <div class="media-report">
+            <h1>媒体报道</h1>
+            <div class="report-img">
+                <img src="../children/报道.png" alt="">
+            </div>
+        </div>
+        <div class="plan-question">
+            <h1>常见问题</h1>
+            <ul>
+                <li class="question-pose" trackevent="" tracklabel="少儿计划问题1点击">Q1 若遇不幸怎么申请互助？<i
+                        class="question-arrow"></i>
+                    <!--(1)弹出内容-->
+                    <div class="hidden-content">
+                        <em></em>
+                        <p>如果患病了，可按照以下流程申请互助：</p>
+                        <p class="qus-two">（1）拨打客服电话400-686-1179发起申请；
+                            <br> （2）第三方专业公估机构核实后，全平台公示；
+                            <br> （3）公示通过无异议，基金会划款至会员所在医院，出院时报销其他治疗及康复费用至个人。
+                        </p>
+                        <p class="qus-two">以“我的水滴”页面中已加入的计划为凭证。</p>
+                    </div>
+                </li>
+                <li class="question-pose" trackevent="" tracklabel="少儿计划问题2点击">Q2 已经有了医保/商业保险为什么也该加入？<i
+                        class="question-arrow"></i>
+                    <!--(2)弹出内容-->
+                    <div class="hidden-content">
+                        <em></em>
+                        <p class="tabFonts">还是需要的。患病后，治疗费用18-30万元。加入互助，医保和商业保险之外，又多了一份保障。
+                            <br> 三者相同点和不同点如下：
+                        </p>
+                        <table class="qus-table">
+                            <tbody>
+                            <tr>
+                                <th class="title-one"></th>
+                                <th>相同点</th>
+                                <th class="title-two">不同点</th>
+                            </tr>
+                            <tr>
+                                <td>医保</td>
+                                <td>提供保障√</td>
+                                <td>部分医药费不在报销范围</td>
+                            </tr>
+                            <tr>
+                                <td>商业保险</td>
+                                <td>提供保障√</td>
+                                <td>价格较高，每年1000~4000元</td>
+                            </tr>
+                            <tr>
+                                <td>水滴互助</td>
+                                <td>提供保障√</td>
+                                <td>性价比高，每年花费约150元，得最高30万元保障
+                                    <br> 可与医保、商业保险叠加
+                                    <br>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li class="question-pose" trackevent="" tracklabel="少儿计划问题3点击">Q3 小孩还没有身份证，怎么加入？<i
+                        class="question-arrow"></i>
+                    <!--(3)弹出内容-->
+                    <div class="hidden-content">
+                        <em></em>
+                        <p class="tabFonts">户口本上有小朋友的身份证号，您可以通过户口本查找。</p>
+                    </div>
+                </li>
+                <li class="question-pose" trackevent="" tracklabel="少儿计划问题4点击">Q4 快到17岁了加入后还能保障多久？<i
+                        class="question-arrow"></i>
+                    <!--(4)弹出内容-->
+                    <div class="hidden-content">
+                        <em></em>
+                        <p class="tabFonts">本计划加入年龄为出生后30天-17周岁，包含17周岁。如果孩子今年17周岁，可以放心加入。</p>
+                        <p class="tabFonts">孩子年满18周岁时，会自动转入中青年抗癌计划，继续享受保障。</p>
+                    </div>
+                </li>
+                <li class="question-pose" trackevent="" tracklabel="少儿计划问题4点击">Q5 水滴互助是保险吗？<i
+                        class="question-arrow"></i>
+                    <!--(5)弹出内容-->
+                    <div class="hidden-content">
+                        <em></em>
+                        <p class="tabFonts">
+                            水滴互助是互助社群，不是保险。加入水滴互助，一人患病，众人分摊，大家互帮互助。且水滴互助不赚取提成费用，保证每一分钱都只用于互助，与保险有本质区别。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="qus-tel">
+            <div class="que-tel-line">
+                <a class="tel-question" href="tel:400-686-1179"><em class="tel-one"></em><span>电话咨询</span></a>
+                <a class="wx-question" href="javascript:;"> <em class="wx-one"></em><span>微信咨询</span></a>
+            </div>
+        </div>
+    </section>
+    <section class="view-href"><a href="vip.html" class="view-convention">《会员公约》<em
+            class="view-arrow"></em></a> <a href="clause.html"
+                                            class="view-convention">《儿童条款》<em class="view-arrow"></em></a> <a
+            href="occupation.html" class="view-items">《健康要求》<em
+            class="view-arrow"></em></a></section>
+    <section>
+        <div class="view-other-plan"><a href="perfect.html">查看其他互助计划</a></div>
+        <div class="buy-area"><a class="shareFriends" id="shareFriendButton" href="javascript:;">
+            <div><em></em> <span>得5元奖励</span></div>
+        </a> <a id="J-add" class="joinAdd"
+                href="../clause/shaoer.html">立即加入<p>
+            （也可以为家人加入）</p></a></div>
+    </section>
+    <script src="../children/zepto.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var wxs = document.createElement('script');
+            wxs.type = 'text/javascript';
+            wxs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'res.wx.qq.com/open/js/jweixin-1.0.0.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wxs, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        var _vds = _vds || [];
+        window._vds = _vds;
+        (function () {
+            _vds.push(['setAccountId', '96cbc1ac272c2306']);
+            (function () {
+                var vds = document.createElement('script');
+                vds.type = 'text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+        })();
+    </script>
+</section>
+
+<script type="text/javascript" src="../comprehensive/common.js"></script>
+<script type="text/javascript" src="../comprehensive/item.js"></script>
+</body>
+</html>
