@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html data-dpr="2" max-width="540" style="font-size: 25px;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>comprehensive</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="../comprehensive/item.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<script>
+    (function (window, document) {
+        if (window.devicePixelRatio && devicePixelRatio >= 2) {
+            var testElem = document.createElement('div');
+            testElem.style.border = '.5px solid transparent';
+            document.body.appendChild(testElem);
+            if (testElem.offsetHeight == 1) {
+                document.querySelector('html').classList.add('hackline')
+            }
+            document.body.removeChild(testElem)
+        }
+        var hotcss = {};
+        (function () {
+            var viewportEl = document.querySelector('meta[name="viewport"]'), hotcssEl = document.querySelector('meta[name="hotcss"]'), dpr = window.devicePixelRatio || 1, maxWidth = 540, designWidth = 0;
+            dpr = dpr >= 3 ? 3 : (dpr >= 2 ? 2 : 1);
+            if (hotcssEl) {
+                var hotcssCon = hotcssEl.getAttribute('content');
+                if (hotcssCon) {
+                    var initialDprMatch = hotcssCon.match(/initial\-dpr=([\d\.]+)/);
+                    if (initialDprMatch) {
+                        dpr = parseFloat(initialDprMatch[1])
+                    }
+                    var maxWidthMatch = hotcssCon.match(/max\-width=([\d\.]+)/);
+                    if (maxWidthMatch) {
+                        maxWidth = parseFloat(maxWidthMatch[1])
+                    }
+                    var designWidthMatch = hotcssCon.match(/design\-width=([\d\.]+)/);
+                    if (designWidthMatch) {
+                        designWidth = parseFloat(designWidthMatch[1])
+                    }
+                }
+            }
+            document.documentElement.setAttribute('data-dpr', dpr);
+            hotcss.dpr = dpr;
+            document.documentElement.setAttribute('max-width', maxWidth);
+            hotcss.maxWidth = maxWidth;
+            if (designWidth) {
+                document.documentElement.setAttribute('design-width', designWidth);
+                hotcss.designWidth = designWidth
+            }
+            var scale = 1 / dpr, content = 'width=device-width, initial-scale=' + scale + ', minimum-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no';
+            if (viewportEl) {
+                viewportEl.setAttribute('content', content)
+            } else {
+                viewportEl = document.createElement('meta');
+                viewportEl.setAttribute('name', 'viewport');
+                viewportEl.setAttribute('content', content);
+                document.head.appendChild(viewportEl)
+            }
+        })();
+        hotcss.px2rem = function (px, designWidth) {
+            if (!designWidth) {
+                designWidth = parseInt(hotcss.designWidth, 10)
+            }
+            return parseInt(px, 10) * 320 / designWidth / 20
+        };
+        hotcss.rem2px = function (rem, designWidth) {
+            if (!designWidth) {
+                designWidth = parseInt(hotcss.designWidth, 10)
+            }
+            return rem * 20 * designWidth / 320
+        };
+        hotcss.mresize = function () {
+            var innerWidth = document.documentElement.getBoundingClientRect().width || window.innerWidth;
+            if (hotcss.maxWidth && (innerWidth / hotcss.dpr > hotcss.maxWidth)) {
+                innerWidth = hotcss.maxWidth * hotcss.dpr
+            }
+            if (!innerWidth) {
+                return false
+            }
+            document.documentElement.style.fontSize = (innerWidth * 20 / 320) + 'px';
+            hotcss.callback && hotcss.callback()
+        };
+        hotcss.mresize();
+        window.addEventListener('resize', function () {
+            clearTimeout(hotcss.tid);
+            hotcss.tid = setTimeout(hotcss.mresize, 33)
+        }, false);
+        window.addEventListener('load', hotcss.mresize, false);
+        setTimeout(function () {
+            hotcss.mresize()
+        }, 333);
+        window.hotcss = hotcss;
+        document.body.addEventListener('touchstart', function () {
+        })
+    })(window, document);
+</script>
+<section class="wrapper">
+    <div class="accident-banner">
+        <div><img class="banner-img accident-banner" src="../comprehensive/首页2.png"></div>
+    </div>
+    <section class="vip-wrap">
+        <div class="vip-info"><span> <p class="info-num" node-type="joinPeopleNum">184653</p> <p class="info-font">
+            已加入会员(人)</p> </span> <em class="vip-info-border"></em> <span> <p class="info-num"
+                                                                             node-type="countIncrement">1660</p> <p
+                class="info-font">近3日新增(人)</p> </span></div>
+    </section>
+    <section class="accident-good">
+        <img src="../comprehensive/首页04.png" alt="">
+    </section>
+    <section id="itemContent">
+        <div class="help-rule">
+            <h1>互助规则</h1>
+            <ul>
+                <!--保障人群-->
+                <li onclick="return click_a('wp_wuover1')" class="plan-people li-border-bottom">保障人群
+                    <span>1-65周岁，身体健康</span>
+                    <i class="arrow"></i>
+                </li>
+                <div id="wp_wuover1" class="hidden-ctn">
+                    <section id="planPeople" class="plan-info-msg">
+                        <em></em>
+                        <p class="font-one">为保证公平性，加入者须满足以下条件：</p>
+                        <p class="font-one">1.年龄1至65周岁（年满66周岁自动退出计划）。</p>
+                        <p class="font-one">2.身体健康，能正常工作，无肢体运动功能或躯体感觉障碍，无器官移植史。</p>
+                        <p class="font-one">3.非港澳台居民。</p>
+                        <p class="font-one">4.符合《健康及职业要求》中的规定。</p>
+                        <p class="font-one">5.认同并承诺遵守《会员公约》以及本互助计划规则。</p>
+                    </section>
+                </div>
+                <!--保障范围-->
+                <li onclick="return click_b('wp_wuover2')" class="plan-cover li-border-bottom">保障范围
+                    <span>意外身故和意外伤残</span>
+                    <i class="arrow"></i>
+                </li>
+                <div  id="wp_wuover2" class="hidden-ctn">
+                    <section id="planCover" class="plan-info-msg">
+                        <em></em>
+                        <p class="font-one">意外身故：遭受意外事故，且自事故发生之日起180日内因同一原因身故的（不包括猝死）</p>
+                        <p class="font-one">意外伤残：遭受意外事故，并自该意外伤害发生之日起180日内因同一原因导致身体伤残的</p>
+
+                    </section>
+                </div>
+                <!--保障额度-->
+                <li onclick="return click_b('wp_wuover3')" class="plan-num li-border-bottom">保障额度
+                    <span>最高<em>15万元</em>保障</span>
+                    <i class="arrow"></i>
+                </li>
+                <div id="wp_wuover3" class="hidden-ctn">
+                    <section id="planNum" class="plan-info-msg">
+                        <em></em>
+                        <table class="plan-table accident-table">
+                            <tbody>
+                            <tr>
+                                <th>项目</th>
+                                <th>最高互助金</th>
+                            </tr>
+                            <tr>
+                                <td>身故互助金</td>
+                                <td>15万元</td>
+                            </tr>
+                            <tr>
+                                <td>伤残互助金</td>
+                                <td>按《人身保险伤残评定标准》规定的比例给付，累计最高：15万元</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                <!--分摊规则-->
+                <li onclick="return click_b('wp_wuover4')" class="plan-rule li-border-bottom">分摊规则
+                    <span>单次不超过<em>4.5元</em>，每年约<em>80元</em></span>
+                    <i class="arrow"></i>
+                </li>
+                <div  id="wp_wuover4" class="hidden-ctn">
+                    <section id="planRule" class="plan-info-msg">
+                        <em></em>
+                        <p class="font-one font-bottom">如有会员不幸发生意外，其他会员会均摊帮助，单次均摊不超过4.5元。</p>
+                        <table class="plan-table">
+                            <tbody>
+                            <tr>
+                                <th>会员总数</th>
+                                <th>均摊金额</th>
+                                <th>互助金</th>
+                            </tr>
+                            <tr>
+                                <td>5万人</td>
+                                <td>3.0元</td>
+                                <td>15万元</td>
+                            </tr>
+                            <tr>
+                                <td>10万人</td>
+                                <td>1.5元</td>
+                                <td>15万元</td>
+                            </tr>
+                            <tr>
+                                <td>50万人</td>
+                                <td>0.3元</td>
+                                <td>15万元</td>
+                            </tr>
+                            <tr>
+                                <td>100万人</td>
+                                <td>0.15元</td>
+                                <td>15万元</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="font-one">说明：</p>
+                        <p class="font-one">(1) 如上表，会员数量越多，单次分摊金额越低。</p>
+                        <p class="font-one">(2) 会员账户余额归本人所有，只有发生互助时才会扣除相应金额。</p>
+                    </section>
+                </div>
+                <!--保障延续-->
+                <li onclick="return click_b('wp_wuover5')" class="plan-continue li-border-bottom">保障延续
+                    <span>账户余额不低于1元即可</span>
+                    <i class="arrow"></i>
+                </li>
+                <div id="wp_wuover5" class="hidden-ctn">
+                    <section id="planContinue" class="plan-info-msg">
+                        <em></em>
+                        <p class="font-one font-bottom">为保障会员能及时获得互助保障金，每人的账户余额不得低于1元。</p>
+                        <table class="plan-table">
+                            <tbody>
+                            <tr>
+                                <th class="th-one">余额</th>
+                                <th>保障状态</th>
+                                <th>余额状态</th>
+                            </tr>
+                            <tr>
+                                <td>余额≥50元</td>
+                                <td><i class="yes-icon"></i></td>
+                                <td class="continue-left">充足</td>
+                            </tr>
+                            <tr>
+                                <td>19元≤余额&lt;50元</td>
+                                <td><i class="yes-icon"></i></td>
+                                <td class="continue-left">良，建议充值至50元以上，避免频繁充值</td>
+                            </tr>
+                            <tr>
+                                <td>1元≤余额&lt;19元</td>
+                                <td><i class="yes-icon"></i></td>
+                                <td class="continue-left">不足，建议及时充值，以免因余额不足失去保障</td>
+                            </tr>
+                            <tr>
+                                <td>余额&lt;1元</td>
+                                <td><i class="no-icon"></i></td>
+                                <td class="continue-left">暂时失去保障，您可以在15天内充值以恢复保障，否则将自动退出</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="font-one">说明：</p>
+                        <p class="font-one">(1) 余额低于19元时，我们会通过微信或短信提醒充值。</p>
+                        <p class="font-one">(2) 互助金由专业人员托管并定期公示。</p>
+                    </section>
+                </div>
+                <!--等待期-->
+                <li onclick="return click_b('wp_wuover6')" class="plan-wait li-border-bottom">等待期
+                    <span class="wait-font">180天</span>
+                    <i class="arrow"></i>
+                </li>
+                <div id="wp_wuover6" class="hidden-ctn">
+                    <section id="waitTime" class="plan-info-msg">
+                        <em></em>
+                        <p class="wait-font font-one">设置等待期的目的是为了防止一些故意的、非正常的行为，导致发生损害广大互助群体利益的情况。</p>
+                        <p class="font-one">在等待期内，若发生意外不可以申请互助金，但须履行分摊义务。等待期过后，会员如不幸发生意外，本计划下的其他互助会员为其发起互助。</p>
+                    </section>
+                </div>
+            </ul>
+        </div>
+        <div class="media-report">
+            <img src="../comprehensive/首页09.png" alt="">
+        </div>
+        <div class="plan-question">
+            <h1>常见问题</h1>
+            <ul>
+                <li onclick="return click_a('wp_wuover7')"  class="question-pose">Q1 意外互助范围是什么？什么才算意外？<i
+                        class="question-arrow"></i>
+                    <!--(1)弹出内容-->
+                    <div id="wp_wuover7" class="hidden-content">
+                        <em></em>
+                        <p class="tabFonts">“意外”需同时满足外来的、突发的、非本意的和非疾病的四个要素，符合此要求造成的身体伤残才可以在本计划中获得互助哦。</p>
+                        <p class="tabFonts">会员遭受意外伤害，并自该意外伤害发生之日起一百八十日内因该意外伤害导致身故或者身残的，其亲属或本人可发起求助申请。</p>
+                        <p class="tabFonts">其中意外伤残的标准以中国保险行业协会和中国法医学会在2013年6月联合发布的《人身保险伤残评定标准》对应的伤残等级，按比例进行互助。
+                        </p>
+                    </div>
+                </li>
+                <li onclick="return click_b('wp_wuover8')"  class="question-pose" >Q2 若遇不幸怎么申请互助？<i
+                        class="question-arrow"></i>
+                    <!--(2)弹出内容-->
+                    <div id="wp_wuover8" class="hidden-content">
+                        <em></em>
+                        <p>如果不幸发生意外，可按照以下流程申请互助</p>
+                        <p class="qus-two">（1）拨打客服电话400-995-5780发起申请；
+                            <br> （2）第三方专业公估机构核实后，全平台公示；
+                            <br> （3）公示通过无异议，从互助金中划款。
+                        </p>
+                        <p class="qus-two">以“我的民意”页面中已加入的计划为凭证。</p>
+                    </div>
+                </li>
+                <li onclick="return click_b('wp_wuover9')" class="question-pose" >Q3 我已经有了意外险为什么也该加入？<i
+                        class="question-arrow"></i>
+                    <!--(3)弹出内容-->
+                    <div id="wp_wuover9" class="hidden-content">
+                        <em></em>
+                        <p class="tabFonts">
+                            综合意外计划互助计划和意外险不互斥，可同时享有，相互补充。且对于很多意外险不予报销的开支，可以通过综合意外计划互助计划来报销。双重保障，为您的健康保驾护航。</p>
+                    </div>
+                </li>
+                <li onclick="return click_b('wp_wuover10')" class="question-pose">Q4 民意互助是保险吗？<i
+                        class="question-arrow"></i>
+                    <!--(4)弹出内容-->
+                    <div id="wp_wuover10" class="hidden-content">
+                        <em></em>
+                        <p class="tabFonts">
+                            民意互助是互助社群，不是保险。加入民意互助，一人患病，众人分摊，大家互帮互助。且民意互助不赚取提成费用，保证每一分钱都只用于互助，与保险有本质区别。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="qus-tel">
+            <div class="que-tel-line">
+                <a class="tel-question" href="tel:15280567038"><em class="tel-one"></em><span>电话咨询</span></a>
+                <a class="wx-question" href="javascript:;"> <em class="wx-one"></em><span>微信咨询</span></a>
+            </div>
+        </div>
+    </section>
+    <section class="view-href"><a href="vip.html" class="view-convention">《会员公约》<em
+            class="view-arrow"></em></a> <a href="comprehensiveTK.html"
+                                            class="view-convention">《综合意外互助条款》<em class="view-arrow"></em></a> <a
+            href="occupation.html" class="view-convention">《健康及职业要求》<em
+            class="view-arrow"></em></a> <a href="InsuranceBZ.html"
+                                            class="view-items">《人身保险伤残评定标准》<em class="view-arrow"></em></a></section>
+    <section>
+        <div class="view-other-plan"><a href="perfect.html">查看其他互助计划</a></div>
+        <div class="buy-area">
+        </a> <a id="J-add" class="joinAdd"
+                href="../clause/zonghe.html">立即加入<p>
+            （也可以为家人加入）</p></a></div>
+    </section>
+</section>
+<script>
+
+    function click_b(divDisplay){
+        if (document.getElementById(divDisplay).style.display != "block") {
+            document.getElementById(divDisplay).style.display = "block";
+        } else {
+            document.getElementById(divDisplay).style.display = "none";
+        }
+    }
+    function click_a(divDisplay) {
+        if (document.getElementById(divDisplay).style.display != "block") {
+            document.getElementById(divDisplay).style.display = "block";
+        } else {
+            document.getElementById(divDisplay).style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
