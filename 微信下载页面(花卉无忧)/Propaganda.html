@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/cutter.css"> <link rel="stylesheet" href="css/addons.css">
+    <script src="assets/js/jquery-1.3.2.min.js"></script> <script src="assets/js/cutter.js"></script>
+    <script src="assets/js/html5.js"></script>
+    <link rel="stylesheet" href="assets/css/ie6.css">
+</head>
+
+
+
+<style>
+    a, a:hover {
+        text-decoration: none;
+        color: #333
+    }
+
+    .box {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        height: auto;
+        z-index: 100;
+        background-color: #f5f5f5;
+        border: 1px #ddd solid;
+        padding: 1px;
+    }
+</style>
+<body>
+<noscript><iframe src=*.html></iframe></noscript> <!--网页将不能被另存为-->
+
+<div class="kq-spring">
+<div class="kq-wrapper" style="text-align: center;">
+    花卉无忧
+</div>
+<del>&times;</del>
+</div>
+<div class="kq-masthead">
+	<div class="kq-wrapper">
+
+   <h1 class="kq-masthead-lead" style="font-size: 31px;">花卉无忧<sup>v1.0</sup></h1>
+    <h2 class="kq-masthead-social">请转至浏览器方可下载</h2>
+        <p>有了花卉无忧</p><br>
+        <p>花卉卖买不再愁</p><br>
+        <p>奇花异石应有尽有，花商与花农面对面交易</p>
+        <h2>不再担心价格卖不高，不再烦恼没货源～花卉无忧，最专业的花卉信息平台</h2>
+        <a href="#" target="_blank" class="kq-button kq-button-default kq-button-xlarge">ios下载</a>
+        <a href="http://120.55.168.242:8080/hhwy/FlowersPlants.apk" target="_blank" class="kq-button kq-button-default kq-button-xlarge">Android</a>
+            <p><br/><img src="imgs/downloads.jpg"/></p>
+    </div>
+</div>
+
+<div class="kq-wrapper kq-footer">
+	  <p>
+	    &copy; CopyRight 20016-2018, huahuiwuyou Inc.All Rights Reserved.
+	  </p>
+
+</div>
+<div id="first" style="display:none;"></div>
+</body>
+<script>
+    window.onload =function(){
+        var res = document.cookie.indexOf("name");
+        var req = '请在右上方使用其它浏览器下载';
+        alert(req);
+        if(req!=0){
+            var oDate =new Date();
+            document.cookie ="name=zheng;";
+            document.getElementById('first').style.display ='block';
+        }
+    }
+</script>
+</html>
+
